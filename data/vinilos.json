@@ -1,0 +1,16 @@
+[
+  {
+    "titulo": "Abbey Road",
+    "artista": "The Beatles",
+    "año": 1969,
+    "decada": "1960s",
+    "tamano": "12 pulgadas",
+    "tipo": "Álbum",
+    "portada": "images/abbey_road_portada.jpg",
+    "contraportada": "images/abbey_road_contra.jpg",
+    "canciones": [
+      "Come Together",
+      "Something"
+    ]
+  }
+]
