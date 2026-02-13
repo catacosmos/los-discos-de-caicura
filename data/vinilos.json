@@ -271,7 +271,7 @@
       "Summer Of '69", "Kids Wanna Rock", "It's Only Love", "Long Gone", "Ain't Gonna Cry"
     ]
   },
-    {
+  {
     "titulo": "Re",
     "artista": "Café Tacvba",
     "año": 1994,
@@ -284,10 +284,10 @@
     ],
     "canciones side B": [
       "24 Horas", "Ixtepec", "Trópico De Cáncer", "El Metro", "El Fin De La Infancia"
-    ]
+    ], 
     "canciones side C": [
       "Madrugal", "Pez", "Verde", "La Negrita", "El Tlatoani Del Barrio"
-    ]
+    ],
     "canciones side D": [
       "Las Flores", "La Pinta", "El Baile Y El Salón", "El Puñal Y El Corazón", "El Balcón"
     ]
