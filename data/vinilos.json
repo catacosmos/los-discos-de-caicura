@@ -1,5 +1,4 @@
 [
-  // --- A ---
   {
     "titulo": "Abba Greatest Hits",
     "artista": "ABBA",
@@ -21,7 +20,7 @@
     "artista": "AC/DC",
     "año": 1980,
     "decada": "1980s",
-    "genero": ["Rock", "Pop" ],
+    "genero": ["Rock", "Pop"],
     "tamano": "12 pulgadas",
     "portada": "images/backinblack_portada.jpg",
     "contraportada": "images/backinblack_contra.jpg",
@@ -106,8 +105,6 @@
       "You Know I'm No Good"
     ]
   },
-
-  // --- N ---
   {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
