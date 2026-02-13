@@ -5,7 +5,6 @@
     "año": 1969,
     "decada": "1960s",
     "tamano": "12 pulgadas",
-    "tipo": "Álbum",
     "portada": "images/abbey_road_portada.jpg",
     "contraportada": "images/abbey_road_contra.jpg",
     "canciones": [
@@ -17,10 +16,9 @@
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
     "año": 2010,
-    "decada": "10s",
+    "decada": "2010s",
     "genero": "Latin Pop Rock",
     "tamano": "12 pulgadas",
-    "tipo": "Álbum",
     "portada": "images/nicole20años_portada.jpg",
     "contraportada": "images/nicole20años_contra.jpg",
     "canciones side A": [
