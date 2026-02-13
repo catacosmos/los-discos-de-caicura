@@ -156,6 +156,24 @@
       "Positively 4th Street", "Just Like A Woman"
     ]
   },
+    {
+    "titulo": "Legend (The Best Of Bob Marley And The Wailers)",
+    "artista": "Bob Marley & The Wailers",
+    "año": 1984,
+    "decada": "1980s",
+    "genero": "Reggae",
+    "tamano": "12 pulgadas",
+    "portada": "images/bobmarley_portada.jpg",
+    "contraportada": "images/bobmarley_contra.jpg",
+    "canciones side 1": [
+      "Is This Love", "No Woman No Cry", "Could You Be Loved", "Three Little Birds",
+      "Buffalo Soldier", "Get Up Stand Up", "Stir It Up"
+    ],
+    "canciones side 2": [
+      "One Love / People Get Ready", "I Shot The Sheriff", "Waiting In Vain", "Redemption Song", 
+      "Satisfy My Soul", "Exodus", "Jamming"
+    ]
+  },
   {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
