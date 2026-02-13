@@ -13,14 +13,24 @@
   </header>
 
   <section class="filters">
+  <div>
+    <label>Artista:</label>
     <select id="filter-artista"></select>
+  </div>
+  <div>
+    <label>Década:</label>
     <select id="filter-decada"></select>
-    <select id="filter-tamano"></select>
-    <select id="filter-tipo"></select>
+  </div>
   </section>
 
   <section id="vinilos-container"></section>
-
+  <div id="modal-detalle" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <div id="modal-body-content">
+      </div>
+  </div>
+  </div>
   <script src="script.js"></script>
 
 </body>
