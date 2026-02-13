@@ -225,6 +225,22 @@
     ]
   },
   {
+    "titulo": "Slippery When Wet",
+    "artista": "Bon Jovi",
+    "año": 1986,
+    "decada": "1980s",
+    "genero": "Rock",
+    "tamano": "12 pulgadas",
+    "portada": "images/slippery_portada.jpg",
+    "contraportada": "images/slippery_contra.jpg",
+    "canciones side 1": [
+      "Let It Rock", "You Give Love A Bad Name", "Livin' On A Prayer", "Social Disease", "Wanted Dead Or Alive"
+    ],
+    "canciones side 2": [
+      "Raise Your Hands", "Without Love", "I'd Die For You", "Never Say Goodbye", "Wild In The Streets"
+    ]
+  },
+  {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
     "año": 2010,
