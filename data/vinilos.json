@@ -13,4 +13,21 @@
       "Something"
     ]
   }
+    {
+    "titulo": "Nicole 20 años",
+    "artista": "Nicole",
+    "año": 2010,
+    "decada": "10s",
+    "genero": "Latin Pop Rock",
+    "tamano": "12 pulgadas",
+    "tipo": "Álbum",
+    "portada": "images/nicole20años_portada.jpg",
+    "contraportada": "images/nicole20años_contra.jpg",
+    "canciones side A": [
+      "Viaje Infinito", "Esperando Nada", "Talvez Me Estoy Enamorando", "Sigo Buscándote", "Noche"
+    ]
+    "canciones side B": [
+      "El Camino", "Lágrimas De Sal", "Despiértame", "Dame Luz", "Hoy"
+    ]
+  }
 ]
