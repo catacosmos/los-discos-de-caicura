@@ -106,7 +106,7 @@
     "año edición": 1977,
     "decada": "1970s",
     "genero": "Funk/Soul",
-    "tamano": ["12 pulgadas", "Single"],
+    "tamano": ["12 pulgadas", "Maxi-Single"],
     "portada": "images/RingMyBell_portada.jpg",
     "canciones side 1": [
       "Ring My Bell"
@@ -260,7 +260,7 @@
     "titulo": "Reckless",
     "artista": "Bryan Adams",
     "año": 1984,
-    "decada": "2080s",
+    "decada": "1980s",
     "genero": "Rock",
     "tamano": "12 pulgadas",
     "portada": "images/recklessbryan_portada.jpg",
@@ -269,6 +269,27 @@
     ],
     "canciones side 2": [
       "Summer Of '69", "Kids Wanna Rock", "It's Only Love", "Long Gone", "Ain't Gonna Cry"
+    ]
+  },
+    {
+    "titulo": "Re",
+    "artista": "Café Tacvba",
+    "año": 1994,
+    "decada": "1990s",
+    "genero": ["Rock", "Latin"],
+    "tamano": "12 pulgadas",
+    "portada": "images/re_portada.jpg",
+    "canciones side A": [
+      "El Aparato", "La Ingrata", "El Ciclón", "El Borrego", "Esa Noche"
+    ],
+    "canciones side B": [
+      "24 Horas", "Ixtepec", "Trópico De Cáncer", "El Metro", "El Fin De La Infancia"
+    ]
+    "canciones side C": [
+      "Madrugal", "Pez", "Verde", "La Negrita", "El Tlatoani Del Barrio"
+    ]
+    "canciones side D": [
+      "Las Flores", "La Pinta", "El Baile Y El Salón", "El Puñal Y El Corazón", "El Balcón"
     ]
   },
   {
