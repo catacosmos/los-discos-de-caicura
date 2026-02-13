@@ -59,7 +59,7 @@ function abrirModal(v) {
         <h2>${v.titulo}</h2>
         <p><strong>Artista:</strong> ${v.artista}</p>
         <p><strong>Año:</strong> ${v.año} (${v.decada})</p>
-        <p><strong>Género:</strong> ${v.genero || 'N/A'}</p>
+        <p><strong>Tamaño:</strong> ${v.tamano}</p> <p><strong>Género:</strong> ${v.genero || 'N/A'}</p>
         <hr>
         <h3>Tracklist:</h3>
         ${listaHTML}
