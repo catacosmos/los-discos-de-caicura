@@ -4,6 +4,7 @@
     "artista": "ABBA",
     "año": 1977,
     "decada": "1970s",
+    "genero": "Pop",
     "tamano": "12 pulgadas",
     "portada": "images/abbagrandesexitos_portada.jpg",
     "contraportada": "images/abbagrandesexitos_contra.jpg",
@@ -11,12 +12,12 @@
       "SOS", "He is your brother", "Ring Ring", "Another town, another train", "Honey Honey", "So long", "Mamma mia"
     ],
     "canciones side 2": [
-      "I do, i do, i do, i do, i do", "People need love", "Waterloo", "Ninna pretty ballerina", 
+      "I do, I do, I do, I do, I do", "People need love", "Waterloo", "Ninna pretty ballerina", 
       "Bang-A-Boomerang", "Dance (While the music still goes on)", "Fernando"
     ]
   },
   {
-    "titulo": "Back in black",
+    "titulo": "Back In Black",
     "artista": "AC/DC",
     "año": 1980,
     "decada": "1980s",
