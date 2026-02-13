@@ -1,17 +1,113 @@
 [
+  // --- A ---
   {
-    "titulo": "Abbey Road",
-    "artista": "The Beatles",
-    "año": 1969,
-    "decada": "1960s",
+    "titulo": "Abba Greatest Hits",
+    "artista": "ABBA",
+    "año": 1977,
+    "decada": "1970s",
     "tamano": "12 pulgadas",
-    "portada": "images/abbey_road_portada.jpg",
-    "contraportada": "images/abbey_road_contra.jpg",
-    "canciones": [
-      "Come Together",
-      "Something"
+    "portada": "images/abbagrandesexitos_portada.jpg",
+    "contraportada": "images/abbagrandesexitos_contra.jpg",
+    "canciones side 1": [
+      "SOS", "He is your brother", "Ring Ring", "Another town, another train", "Honey Honey", "So long", "Mamma mia"
+    ],
+    "canciones side 2": [
+      "I do, i do, i do, i do, i do", "People need love", "Waterloo", "Ninna pretty ballerina", 
+      "Bang-A-Boomerang", "Dance (While the music still goes on)", "Fernando"
     ]
   },
+  {
+    "titulo": "Back in black",
+    "artista": "AC/DC",
+    "año": 1980,
+    "decada": "1980s",
+    "genero": ["Rock", "Pop" ],
+    "tamano": "12 pulgadas",
+    "portada": "images/backinblack_portada.jpg",
+    "contraportada": "images/backinblack_contra.jpg",
+    "canciones side 1": [
+      "Hell's Bells", "Shoot To Thrill", "What Do You Do For Money Honey", "Given The Dog A Bone",
+      "Let Me Put My Love Into You"
+    ],
+    "canciones side 2": [
+      "Back In Black", "You Shook Me All Night Long", "Have A Drink On Me", "Shake A Leg", 
+      "Rock And Roll Ain't Noise Pollution"
+    ]
+  },
+  {
+    "titulo": "Aerosmith's Greatest Hits",
+    "artista": "Aerosmith",
+    "año edición": 2019,
+    "decada": "1980s",
+    "genero": "Rock",
+    "tamano": "12 pulgadas",
+    "portada": "images/aerosmithGH_portada.jpg",
+    "contraportada": "images/aerosmithGH_contra.jpg",
+    "canciones side 1": [
+      "Dream On", "Same Old Song And Dance", "Sweet Emotion",
+      "Walk This Way", "Last Child"
+    ],
+    "canciones side 2": [
+      "Back In The Saddle", "Draw The Line", "Kings And Queens", "Come Together", 
+      "Remember (Walking In The Sand)"
+    ]
+  },
+  {
+    "titulo": "Headlines And Deadlines (The Hits Of A-ha)",
+    "artista": "a-ha",
+    "año edición": 2018,
+    "decada": "1990s",
+    "genero": ["Electronic", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/hitsaha_portada.jpg",
+    "contraportada": "images/hitsaha_contra.jpg",
+    "canciones side A": [
+      "Take On Me", "Cry Wolf", "Touchy", "You Are The One (Remix)", "Manhattan Skyline",
+      "The Blood That Moves The Body", "Hunting High And Low (Remix)"
+    ],
+    "canciones side B": [
+      "Move To Memphis", "I've Been Losing You", "The Living Daylights", "Crying In The Rain", 
+      "I Call Your Name", "Stay On These Roads", "The Sun Always Shines On TV"
+    ]
+  },
+  {
+    "titulo": "15 Grandes Exitos",
+    "artista": "Amanda Miguel",
+    "año edición": 1987,
+    "decada": "1980s",
+    "genero": ["Latin", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/15gh_portada.jpg",
+    "contraportada": "images/15gh_contra.jpg",
+    "canciones lado 1": [
+      "Asi No Te Amara Jamas", "Hagamos Un Trato", "Como Un Titere", "Quiero Un Amor Total", "Quien Sera",
+      "Si O No", "Y Te Amo Igual", "El Gato Y Yo"
+    ],
+    "canciones lado 2": [
+      "Calla, El Silencio Es Sagrado (Memory)", "Las Pequeñas Cosas", "Mi Buen Corazon", "El Me Mintio", 
+      "Dudas", "Desierto", "Siempre Te Amare"
+    ]
+  },
+  {
+    "titulo": "Back To Black",
+    "artista": "Amy Winehouse",
+    "año edición": 2006,
+    "decada": "2000s",
+    "genero": ["Jazz", "Funk/Soul", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/BTBamy_portada.jpg",
+    "contraportada": "images/BTBamy_contra.jpg",
+    "canciones side 1": [
+      "Rehab", "You Know I'm No Good", "Me & Mr Jones", "Just Friends", "Back To Black",
+      "Love Is A Losing Game"
+    ],
+    "canciones side 2": [
+      "Tears Dry On Their Own", "Wake Up Alone", "Some Unholy War", "He Can Only Hold Her", 
+      "You Know I'm No Good"
+    ]
+  },
+
+  // --- N ---
   {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
