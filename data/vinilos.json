@@ -307,7 +307,7 @@
       "No Voy En Tren", "Rezo Por Vos", "El Karma De Vivir Al Sur", "Ella Adivino", "La Ruta Del Tentempie"
     ]
   },
-    {
+  {
     "titulo": "Piano Bar",
     "artista": "Charly Garcia",
     "año": 1984,
@@ -320,6 +320,38 @@
     ],
     "canciones side 2": [
       "No Se Va A Llamar Mi Amor", "Tuve Tu Amor", "Rap Del Exilio", "Cerca De La Revolución", "Total Interferencia"
+    ]
+  },
+  {
+    "titulo": "Cumbia Chilombiana",
+    "artista": "Chico Trujillo",
+    "año": 2006,
+    "decada": "2000s",
+    "genero": "Latin",
+    "tamano": "12 pulgadas",
+    "portada": "images/chilombiana_portada.jpg",
+    "canciones side 1": [
+      "Medallita", "Pollera Amarilla", "Conductor", "Calentones", "Guarare", "No Me Busques"
+    ],
+    "canciones side 2": [
+      "Sombrero", "La Escoba", "Mira Si No He de Venir", "Regresa", "Mix Chilombiano"
+    ]
+  },
+  {
+    "titulo": "Greatest Hits",
+    "artista": "Creedence Clearwater Revival",
+    "año": 2017,
+    "decada": "2020s",
+    "genero": "Rock",
+    "tamano": "12 pulgadas",
+    "portada": "images/creedence_portada.jpg",
+    "canciones side 1": [
+      "Down On The Corner", "Looking Out My Back Door", "Proud Mary", "Fortunate Son", "Leave My Woman Alone", "Hoochie Coochie Man",
+      "My Toot Toot", "Van Kant Danz"
+    ],
+    "canciones side 2": [
+      "Midnight Special", "Bad Moon Rising", "The Night Time Is The Right Time", "Tombstone Shadow", "Sweet Hitch Hiker",
+      "Bronco", "The Left Alone"
     ]
   },
   {
