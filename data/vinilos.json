@@ -123,6 +123,40 @@
     ]
   },
   {
+    "titulo": "Black Pumas",
+    "artista": "Black Pumas",
+    "año": 2019,
+    "decada": "2010s",
+    "genero": "Funk/Soul",
+    "tamano": "12 pulgadas",
+    "portada": "images/blackpumas_portada.jpg",
+    "contraportada": "images/blackpumas_contra.jpg",
+    "canciones side 1": [
+      "Black Moon Rising", "Colors", "Know You Better", "Fire", "OCT 33"
+    ],
+    "canciones side 2": [
+      "Stay Gold", "Old Man", "Confines", "Touch The Sky", "Sweet Conversations"
+    ]
+  },
+  {
+    "titulo": "Bob Dylan's Greatest Hits",
+    "artista": "Bob Dylan",
+    "año": 2017,
+    "decada": "1960s",
+    "genero": ["Rock", "Folk", "World & Country"],
+    "tamano": "12 pulgadas",
+    "portada": "images/bdylandGH_portada.jpg",
+    "contraportada": "images/bdylandGH_contra.jpg",
+    "canciones side 1": [
+      "Rainy Day Women #12 & 35", "Blowin' In The Wind", "The Times They Are A-Changin'",
+      "It Ain't Me Babe", "Like A Rolling Stone"
+    ],
+    "canciones side 2": [
+      "Mr. Tambourine Man", "Subterranean Homesick Blues", "I Want You", 
+      "Positively 4th Street", "Just Like A Woman"
+    ]
+  },
+  {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
     "año": 2010,
