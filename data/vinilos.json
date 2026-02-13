@@ -156,7 +156,7 @@
       "Positively 4th Street", "Just Like A Woman"
     ]
   },
-    {
+  {
     "titulo": "Legend (The Best Of Bob Marley And The Wailers)",
     "artista": "Bob Marley & The Wailers",
     "año": 1984,
@@ -174,7 +174,7 @@
       "Satisfy My Soul", "Exodus", "Jamming"
     ]
   },
-    {
+  {
     "titulo": "7800° Fahrenheit",
     "artista": "Bon Jovi",
     "año": 1985,
@@ -189,6 +189,39 @@
     "canciones side 2": [
       "Tokyo Road", "The Hardest Part Is The Night", "Always Run To You", 
       "To The Fire", "Secret Dreams"
+    ]
+  },
+  {
+    "titulo": "Livin' On A Prayer / You Give Love A Bad Name / Edge Of A Broken Heart",
+    "artista": "Bon Jovi",
+    "año": 1986,
+    "decada": "1980s",
+    "genero": "Rock",
+    "tamano": ["12 pulgadas", "Maxi-Single"],
+    "portada": "images/bonjovimaxisingle_portada.jpg",
+    "contraportada": "images/bonjovimaxisingle_contra.jpg",
+    "canciones side 1": [
+      "Livin' On A Prayer"
+    ],
+    "canciones side 2": [
+      "You Give Love A Bad Name", "Edge Of A Broken Heart"
+    ]
+  },
+  {
+    "titulo": "New Jersey",
+    "artista": "Bon Jovi",
+    "año": 1988,
+    "decada": "1980s",
+    "genero": "Rock",
+    "tamano": "12 pulgadas",
+    "portada": "images/newjersey_portada.jpg",
+    "contraportada": "images/newjersey_contra.jpg",
+    "canciones side 1": [
+      "Lay Your Hands On Me", "Bad Medicine", "Born To Be My Baby", "Living In Sin", "Blood On Blood"
+    ],
+    "canciones side 2": [
+      "Wild Is The Wind", "Ride Cowboy Ride", "Stick To Your Guns", "I'll Be There For You",
+      "99 In The Shade", "Love For Sale"
     ]
   },
   {
