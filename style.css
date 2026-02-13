@@ -222,3 +222,29 @@ hr {
   h1 { font-size: 2rem; }
   .modal-content { margin: 10% auto; padding: 20px; }
 }
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1; /* Para que ocupe un poco más de espacio */
+  max-width: 300px;
+}
+
+#search-input {
+  padding: 10px 15px;
+  border-radius: 4px;
+  background: #252525;
+  color: #fff;
+  border: 1px solid #960000;
+  outline: none;
+}
+
+#search-input:focus {
+  border-color: #f1c40f;
+}
+
+#search-input::placeholder {
+  color: #666;
+  font-style: italic;
+}
