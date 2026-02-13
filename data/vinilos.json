@@ -355,6 +355,42 @@
     ]
   },
   {
+    "titulo": "Dueña De Mi Corazón",
+    "artista": "Daniela Romo",
+    "año": 1985,
+    "decada": "1980s",
+    "genero": ["Electronic", "Latin", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/danielaromo_portada.jpg",
+    "canciones side 1": [
+      "Abuso", "Dueña De Mi Corazon", "Mi Perdicion", "Ahora Tu", "Mas Vale Un Hombre"
+    ],
+    "canciones side 2": [
+      "No Puedo Creer", "Lastima", "Es Nuestro Amor", "Prometes", "Amor Con Amor Se Paga"
+    ]
+  },
+  {
+    "titulo": "Daryl Hall John Oates*",
+    "artista": "Daryl Hall John Oates",
+    "año": 2017,
+    "decada": "2010s",
+    "genero": ["Rock", "Funk/Soul", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/timelessclassics_portada.jpg",
+    "canciones side 1": [
+      "You Make My Dreams", "I Can't Go For That (No Can Do)", "She's Gone", "Family Man", "Out Of Touch"
+    ],
+    "canciones side 2": [
+      "Out Of Touch", "Private Eyes", "Sara Smile", "Wait For Me", "You've Lost That Lovin' Feeling"
+    ]
+    "canciones side C": [
+      "Kiss On My List", "Maneater", "One On One", "Say It Isn't So"
+    ]
+    "canciones side D": [
+      "Adult Education", "Everytime You Go Away (Live)", "Everything Your Heart Desires", "Rich Girl"
+    ]
+  },
+  {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
     "año": 2010,
