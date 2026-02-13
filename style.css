@@ -248,3 +248,60 @@ hr {
   color: #666;
   font-style: italic;
 }
+
+/* 📱 AJUSTES RESPONSIVOS Y MENSAJE DE ERROR */
+
+/* Estilo para el mensaje de "No resultados" */
+.no-results {
+  text-align: center;
+  padding: 50px;
+  color: #f1c40f;
+  width: 100%;
+}
+
+.no-results p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.no-results span {
+  color: #666;
+  font-style: italic;
+}
+
+/* Media Query para pantallas pequeñas (Celulares) */
+@media (max-width: 600px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Título más pequeño en celular */
+  }
+
+  .main-logo {
+    max-width: 100px;
+  }
+
+  .filters {
+    flex-direction: column; /* Filtros uno debajo del otro */
+    align-items: stretch;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .search-container {
+    max-width: 100%; /* El buscador ocupa todo el ancho */
+  }
+
+  #vinilos-container {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .vinilo-card {
+    width: 100%; /* Las cartas ocupan casi todo el ancho */
+    max-width: 280px;
+  }
+}
