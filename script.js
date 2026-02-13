@@ -11,10 +11,21 @@ function mostrarVinilos(lista) {
   const container = document.getElementById("vinilos-container");
   container.innerHTML = "";
 
-  lista.forEach((v, index) => {
+  // Si no hay resultados, mostramos el mensaje
+  if (lista.length === 0) {
+    container.innerHTML = `
+      <div class="no-results">
+        <p>🤘 No se encontraron vinilos que coincidan...</p>
+        <span>¡Prueba con otro filtro o artista!</span>
+      </div>
+    `;
+    return;
+  }
+
+  // Si hay resultados, los mostramos normalmente
+  lista.forEach((v) => {
     const div = document.createElement("div");
     div.classList.add("vinilo-card");
-    // Agregamos un evento de clic a la card
     div.onclick = () => abrirModal(v);
 
     div.innerHTML = `
