@@ -7,23 +7,65 @@ async function cargarData(){
   cargarFiltros();
 }
 
-function mostrarVinilos(lista){
+function mostrarVinilos(lista) {
   const container = document.getElementById("vinilos-container");
   container.innerHTML = "";
 
-  lista.forEach(v => {
+  lista.forEach((v, index) => {
     const div = document.createElement("div");
     div.classList.add("vinilo-card");
+    // Agregamos un evento de clic a la card
+    div.onclick = () => abrirModal(v);
 
     div.innerHTML = `
       <img src="${v.portada}" alt="${v.titulo}">
       <h3>${v.titulo}</h3>
-      <p>${v.artista}</p>
+      <p><strong>${v.artista}</strong></p>
       <p>${v.año}</p>
     `;
-
     container.appendChild(div);
   });
+}
+
+function abrirModal(v) {
+  const modal = document.getElementById("modal-detalle");
+  const content = document.getElementById("modal-body-content");
+
+  // Manejamos la lista de canciones (considerando que Nicole tiene side A/B y Beatles no)
+  let listaHTML = "";
+  if (v.canciones) {
+    listaHTML = `<ul>${v.canciones.map(c => `<li>${c}</li>`).join('')}</ul>`;
+  } else if (v["canciones side A"]) {
+    listaHTML = `
+      <h4>Side A</h4><ul>${v["canciones side A"].map(c => `<li>${c}</li>`).join('')}</ul>
+      <h4>Side B</h4><ul>${v["canciones side B"].map(c => `<li>${c}</li>`).join('')}</ul>`;
+  }
+
+  content.innerHTML = `
+    <div class="modal-grid">
+      <img src="${v.portada}" alt="Portada">
+      <div>
+        <h2>${v.titulo}</h2>
+        <p><strong>Artista:</strong> ${v.artista}</p>
+        <p><strong>Año:</strong> ${v.año} (${v.decada})</p>
+        <p><strong>Género:</strong> ${v.genero || 'N/A'}</p>
+        <hr>
+        <h3>Tracklist:</h3>
+        ${listaHTML}
+      </div>
+    </div>
+  `;
+  modal.style.display = "block";
+}
+
+// Lógica para cerrar el modal
+document.querySelector(".close-btn").onclick = () => {
+  document.getElementById("modal-detalle").style.display = "none";
+}
+
+window.onclick = (event) => {
+  const modal = document.getElementById("modal-detalle");
+  if (event.target == modal) modal.style.display = "none";
 }
 
 function cargarFiltros() {
