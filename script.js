@@ -15,7 +15,7 @@ function mostrarVinilos(lista) {
   if (lista.length === 0) {
     container.innerHTML = `
       <div class="no-results">
-        <p>🤘 No se encontraron vinilos que coincidan...</p>
+        <p>No se encontraron vinilos que coincidan...</p>
         <span>¡Prueba con otro filtro o artista!</span>
       </div>
     `;
@@ -30,7 +30,7 @@ function mostrarVinilos(lista) {
 
     div.innerHTML = `
       <img src="${v.portada}" alt="${v.titulo}">
-      <h3>${v.titulo}</h3>
+      <div class="tamano-tag">${v.tamano}</div> <h3>${v.titulo}</h3>
       <p><strong>${v.artista}</strong></p>
       <p>${v.año}</p>
     `;
