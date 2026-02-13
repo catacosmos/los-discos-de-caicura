@@ -241,6 +241,38 @@
     ]
   },
   {
+    "titulo": "Born In The U.S.A.",
+    "artista": "Bruce Springsteen",
+    "año": 1984,
+    "decada": "1980s",
+    "genero": "Rock",
+    "tamano": "12 pulgadas",
+    "portada": "images/bruceusa_portada.jpg",
+    "contraportada": "images/bruceusa_contra.jpg",
+    "canciones side 1": [
+      "Born In The U.S.A.", "Cover Me", "Darlington County", "Working On The Highway", "Downbound Train", "I'm On Fire"
+    ],
+    "canciones side 2": [
+      "No Surrender", "Bobby Jean", "I'm Goin' Down", "Glory Days", "Dancing In The Dark", "My Hometown"
+    ]
+  },
+  {
+    "titulo": "Doo-Wops & Hooligans",
+    "artista": "Bruno Mars",
+    "año": 2010,
+    "decada": "2010s",
+    "genero": ["Hip Hop", "Funk/Soul", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/doowops_portada.jpg",
+    "contraportada": "images/doowops_contra.jpg",
+    "canciones side 1": [
+      "Grenade", "Just The Way You Are", "Our First Time", "Runaway Baby", "The Lazy Song"
+    ],
+    "canciones side 2": [
+      "Marry You", "Talking To The Moon", "Liquor Store Blues", "Count On Me", "The Other Side"
+    ]
+  },
+  {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
     "año": 2010,
