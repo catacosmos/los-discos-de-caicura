@@ -421,6 +421,82 @@
     ]
   },
   {
+    "titulo": "The Best Of (Volume 1)",
+    "artista": "Depeche Mode",
+    "año": 2017,
+    "decada": "2010s",
+    "genero": ["Electronic", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/thebestof_portada.jpg",
+    "canciones side A": [
+      "Personal Jesus", "Just Can't Get Enough", "Everything Counts"
+    ],
+    "canciones side B": [
+      "Enjoy The Silence", "Shake The Disease", "See You"
+    ],
+    "canciones side C": [
+      "It's No Good", "Strangelove", "Suffer Well"
+    ],
+    "canciones side D": [
+      "Dream On", "People Are People", "Martyr"
+    ],
+    "canciones side E": [
+      "Walking In My Shoes", "I Feel You", "Precious"
+    ],
+    "canciones side F": [
+      "Master And Servant", "New Life", "Never Let Me Down Again"
+    ]
+  },
+  {
+    "titulo": "Violator",
+    "artista": "Depeche Mode",
+    "año": 1990,
+    "decada": "1990s",
+    "genero": "Electronic",
+    "tamano": "12 pulgadas",
+    "portada": "images/violator_portada.jpg",
+    "canciones side 1": [
+      "World In My Eyes", "Sweetest Perfection", "Personal Jesus", "Halo", "Waiting For The Night"
+    ],
+    "canciones side 2": [
+      "Enjoy The Silence", "Policy Of Truth", "Blue Dress", "Clean"
+    ]
+  },
+  {
+    "titulo": "Diana Ross' Greatest Hits",
+    "artista": "Diana Ross",
+    "año": 1976,
+    "decada": "1970s",
+    "genero": "Funk/Soul",
+    "tamano": "12 pulgadas",
+    "portada": "images/dianaross_portada.jpg",
+    "canciones side 1": [
+      "Touch Me In The Morning", "Love Hangover", "Last Time I Saw Him", 
+      "I Thought It Took A Little Time (But Today I Fell In Love)", "Theme From Mahogany (Do You Know Where You're Going To)"
+    ],
+    "canciones side 2": [
+      "Ain't No Mountain High Enough", "Remember Me", "One Love In My Lifetime", 
+      "Reach Out And Touch (Somebody's Hand)", "Good Morning Heartache"
+    ]
+  },
+  {
+    "titulo": "Future Nostalgia",
+    "artista": "Dua Lipa",
+    "año": 2020,
+    "decada": "2020s",
+    "genero": ["Electronic", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/futurenostalgia_portada.jpg",
+    "canciones side 1": [
+      "Future Nostalgia", "Don't Start Now", "Cool", 
+      "Physical", "Levitating", "Pretty Please"
+    ],
+    "canciones side 2": [
+      "Hallucinate", "Love Again", "Break My Heart", 
+      "Good In Bed", "Boys Will Be Boys"
+    ]
+  },
+  {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
     "año": 2010,
