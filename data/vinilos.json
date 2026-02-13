@@ -106,6 +106,22 @@
       "You Know I'm No Good"
     ]
   },
+    {
+    "titulo": "Ring My Bell",
+    "artista": "Anita Ward",
+    "año edición": 1977,
+    "decada": "1970s",
+    "genero": "Funk/Soul",
+    "tamano": ["12 pulgadas", "Single"],
+    "portada": "images/RingMyBell_portada.jpg",
+    "contraportada": "images/RingMyBell_contra.jpg",
+    "canciones side 1": [
+      "Ring My Bell"
+    ],
+    "canciones side 2": [
+      "Make Believe Lovers"
+    ]
+  },
   {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
