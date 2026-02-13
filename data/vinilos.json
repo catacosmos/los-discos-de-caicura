@@ -7,7 +7,6 @@
     "genero": "Pop",
     "tamano": "12 pulgadas",
     "portada": "images/abbagrandesexitos_portada.jpg",
-    "contraportada": "images/abbagrandesexitos_contra.jpg",
     "canciones side 1": [
       "SOS", "He is your brother", "Ring Ring", "Another town, another train", "Honey Honey", "So long", "Mamma mia"
     ],
@@ -24,7 +23,6 @@
     "genero": ["Rock", "Pop"],
     "tamano": "12 pulgadas",
     "portada": "images/backinblack_portada.jpg",
-    "contraportada": "images/backinblack_contra.jpg",
     "canciones side 1": [
       "Hell's Bells", "Shoot To Thrill", "What Do You Do For Money Honey", "Given The Dog A Bone",
       "Let Me Put My Love Into You"
@@ -42,7 +40,6 @@
     "genero": "Rock",
     "tamano": "12 pulgadas",
     "portada": "images/aerosmithGH_portada.jpg",
-    "contraportada": "images/aerosmithGH_contra.jpg",
     "canciones side 1": [
       "Dream On", "Same Old Song And Dance", "Sweet Emotion",
       "Walk This Way", "Last Child"
@@ -60,7 +57,6 @@
     "genero": ["Electronic", "Pop"],
     "tamano": "12 pulgadas",
     "portada": "images/hitsaha_portada.jpg",
-    "contraportada": "images/hitsaha_contra.jpg",
     "canciones side A": [
       "Take On Me", "Cry Wolf", "Touchy", "You Are The One (Remix)", "Manhattan Skyline",
       "The Blood That Moves The Body", "Hunting High And Low (Remix)"
@@ -78,7 +74,6 @@
     "genero": ["Latin", "Pop"],
     "tamano": "12 pulgadas",
     "portada": "images/15gh_portada.jpg",
-    "contraportada": "images/15gh_contra.jpg",
     "canciones lado 1": [
       "Asi No Te Amara Jamas", "Hagamos Un Trato", "Como Un Titere", "Quiero Un Amor Total", "Quien Sera",
       "Si O No", "Y Te Amo Igual", "El Gato Y Yo"
@@ -96,7 +91,6 @@
     "genero": ["Jazz", "Funk/Soul", "Pop"],
     "tamano": "12 pulgadas",
     "portada": "images/BTBamy_portada.jpg",
-    "contraportada": "images/BTBamy_contra.jpg",
     "canciones side 1": [
       "Rehab", "You Know I'm No Good", "Me & Mr Jones", "Just Friends", "Back To Black",
       "Love Is A Losing Game"
@@ -114,7 +108,6 @@
     "genero": "Funk/Soul",
     "tamano": ["12 pulgadas", "Single"],
     "portada": "images/RingMyBell_portada.jpg",
-    "contraportada": "images/RingMyBell_contra.jpg",
     "canciones side 1": [
       "Ring My Bell"
     ],
@@ -130,7 +123,6 @@
     "genero": "Funk/Soul",
     "tamano": "12 pulgadas",
     "portada": "images/blackpumas_portada.jpg",
-    "contraportada": "images/blackpumas_contra.jpg",
     "canciones side 1": [
       "Black Moon Rising", "Colors", "Know You Better", "Fire", "OCT 33"
     ],
@@ -146,7 +138,6 @@
     "genero": ["Rock", "Folk", "World & Country"],
     "tamano": "12 pulgadas",
     "portada": "images/bdylanGH_portada.jpg",
-    "contraportada": "images/bdylanGH_contra.jpg",
     "canciones side 1": [
       "Rainy Day Women #12 & 35", "Blowin' In The Wind", "The Times They Are A-Changin'",
       "It Ain't Me Babe", "Like A Rolling Stone"
@@ -164,7 +155,6 @@
     "genero": "Reggae",
     "tamano": "12 pulgadas",
     "portada": "images/bobmarley_portada.jpg",
-    "contraportada": "images/bobmarley_contra.jpg",
     "canciones side 1": [
       "Is This Love", "No Woman No Cry", "Could You Be Loved", "Three Little Birds",
       "Buffalo Soldier", "Get Up Stand Up", "Stir It Up"
@@ -182,7 +172,6 @@
     "genero": "Rock",
     "tamano": "12 pulgadas",
     "portada": "images/7800_portada.jpg",
-    "contraportada": "images/7800_contra.jpg",
     "canciones side 1": [
       "In And Out Of Love", "The Price Of Love", "Only Lonely", "King Of The Mountain", "Silent Night"
     ],
@@ -199,7 +188,6 @@
     "genero": "Rock",
     "tamano": ["12 pulgadas", "Maxi-Single"],
     "portada": "images/bonjovimaxisingle_portada.jpg",
-    "contraportada": "images/bonjovimaxisingle_contra.jpg",
     "canciones side 1": [
       "Livin' On A Prayer"
     ],
@@ -215,7 +203,6 @@
     "genero": "Rock",
     "tamano": "12 pulgadas",
     "portada": "images/newjersey_portada.jpg",
-    "contraportada": "images/newjersey_contra.jpg",
     "canciones side 1": [
       "Lay Your Hands On Me", "Bad Medicine", "Born To Be My Baby", "Living In Sin", "Blood On Blood"
     ],
@@ -232,7 +219,6 @@
     "genero": "Rock",
     "tamano": "12 pulgadas",
     "portada": "images/slippery_portada.jpg",
-    "contraportada": "images/slippery_contra.jpg",
     "canciones side 1": [
       "Let It Rock", "You Give Love A Bad Name", "Livin' On A Prayer", "Social Disease", "Wanted Dead Or Alive"
     ],
@@ -248,7 +234,6 @@
     "genero": "Rock",
     "tamano": "12 pulgadas",
     "portada": "images/bruceusa_portada.jpg",
-    "contraportada": "images/bruceusa_contra.jpg",
     "canciones side 1": [
       "Born In The U.S.A.", "Cover Me", "Darlington County", "Working On The Highway", "Downbound Train", "I'm On Fire"
     ],
@@ -264,12 +249,26 @@
     "genero": ["Hip Hop", "Funk/Soul", "Pop"],
     "tamano": "12 pulgadas",
     "portada": "images/doowops_portada.jpg",
-    "contraportada": "images/doowops_contra.jpg",
     "canciones side 1": [
       "Grenade", "Just The Way You Are", "Our First Time", "Runaway Baby", "The Lazy Song"
     ],
     "canciones side 2": [
       "Marry You", "Talking To The Moon", "Liquor Store Blues", "Count On Me", "The Other Side"
+    ]
+  },
+  {
+    "titulo": "Reckless",
+    "artista": "Bryan Adams",
+    "año": 1984,
+    "decada": "2080s",
+    "genero": "Rock",
+    "tamano": "12 pulgadas",
+    "portada": "images/recklessbryan_portada.jpg",
+    "canciones side 1": [
+      "One Night Love Affair", "She's Only Happy When She's Dancin'", "Run To You", "Heaven", "Somebody"
+    ],
+    "canciones side 2": [
+      "Summer Of '69", "Kids Wanna Rock", "It's Only Love", "Long Gone", "Ain't Gonna Cry"
     ]
   },
   {
@@ -280,7 +279,6 @@
     "genero": "Latin Pop Rock",
     "tamano": "12 pulgadas",
     "portada": "images/nicole20años_portada.jpg",
-    "contraportada": "images/nicole20años_contra.jpg",
     "canciones side A": [
       "Viaje Infinito", "Esperando Nada", "Talvez Me Estoy Enamorando", "Sigo Buscándote", "Noche"
     ],
