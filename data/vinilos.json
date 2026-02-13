@@ -397,9 +397,9 @@
     "decada": "1980s",
     "genero": ["Electronic", "Rock", "Pop"],
     "tamano": "12 pulgadas",
-    "portada": "images/dchangestwo_portada.jpg",
+    "portada": "images/changestwo_portada.jpg",
     "canciones side 1": [
-      "Aladdin Sane (1913-1938-197?) / On Broadway", "Oh! You Pretty Things", "Starman", "1984", "Ashes To Ashes"
+      "Aladdin Sane (1913-1938-197?)", "Oh! You Pretty Things", "Starman", "1984", "Ashes To Ashes"
     ],
     "canciones side 2": [
       "Sound And Vision", "Fashion", "Wild Is The Wind", "John I'm Only Dancing (Again) (1975)", "D.J."
@@ -414,7 +414,7 @@
     "tamano": "12 pulgadas",
     "portada": "images/24carat_portada.jpg",
     "canciones side 1": [
-      "Woman From Tokyo", "Fireball", "Strange Kind Of Woman", "Never Before", "Black Night (Live)"
+      "Woman From Tokyo", "Fireball", "Strange Kind Of Woman", "Never Before", "Black Night"
     ],
     "canciones side 2": [
       "Speed King", "Smoke On The Water", "Child In Time"
@@ -454,7 +454,7 @@
     "decada": "1990s",
     "genero": "Electronic",
     "tamano": "12 pulgadas",
-    "portada": "images/violator_portada.jpg",
+    "portada": "images/violator_poratda.jpg",
     "canciones side 1": [
       "World In My Eyes", "Sweetest Perfection", "Personal Jesus", "Halo", "Waiting For The Night"
     ],
@@ -471,12 +471,12 @@
     "tamano": "12 pulgadas",
     "portada": "images/dianaross_portada.jpg",
     "canciones side 1": [
-      "Touch Me In The Morning", "Love Hangover", "Last Time I Saw Him", 
+      "Touch Me In The Morning", "Love Hangover", "I'm Still Waiting", "Last Time I Saw Him", "Sorry Doesn't Always Make It Right",
       "I Thought It Took A Little Time (But Today I Fell In Love)", "Theme From Mahogany (Do You Know Where You're Going To)"
     ],
     "canciones side 2": [
-      "Ain't No Mountain High Enough", "Remember Me", "One Love In My Lifetime", 
-      "Reach Out And Touch (Somebody's Hand)", "Good Morning Heartache"
+      "Ain't No Mountain High Enough", "Remember Me", "One Love In My Lifetime", "Good Morning Heartache",
+      "All Of My Life", "Reach Out And Touch (Somebody's Hand)", "DoobeDood'nDoobe, DoobeDood'nDoobe, DoobeDood'nDoo"
     ]
   },
   {
