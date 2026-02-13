@@ -370,17 +370,17 @@
     ]
   },
   {
-    "titulo": "Daryl Hall John Oates*",
+    "titulo": "Timeless Classics",
     "artista": "Daryl Hall John Oates",
     "año": 2017,
     "decada": "2010s",
     "genero": ["Rock", "Funk/Soul", "Pop"],
     "tamano": "12 pulgadas",
     "portada": "images/timelessclassics_portada.jpg",
-    "canciones side 1": [
+    "canciones side A": [
       "You Make My Dreams", "I Can't Go For That (No Can Do)", "She's Gone", "Family Man", "Out Of Touch"
     ],
-    "canciones side 2": [
+    "canciones side B": [
       "Out Of Touch", "Private Eyes", "Sara Smile", "Wait For Me", "You've Lost That Lovin' Feeling"
     ],
     "canciones side C": [
