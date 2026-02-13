@@ -293,6 +293,36 @@
     ]
   },
   {
+    "titulo": "Parte De La Religion",
+    "artista": "Charly Garcia",
+    "año": 1987,
+    "decada": "1980s",
+    "genero": "Rock",
+    "tamano": "12 pulgadas",
+    "portada": "images/partedelareligion_portada.jpg",
+    "canciones side 1": [
+      "Necesito Tu Amor", "Buscando Un Simbolo De Paz", "Parte De La Religion", "Rap De Las Hormigas", "Adela En El Carrusel"
+    ],
+    "canciones side 2": [
+      "No Voy En Tren", "Rezo Por Vos", "El Karma De Vivir Al Sur", "Ella Adivino", "La Ruta Del Tentempie"
+    ]
+  },
+    {
+    "titulo": "Piano Bar",
+    "artista": "Charly Garcia",
+    "año": 1984,
+    "decada": "1980s",
+    "genero": ["Rock", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/pianobar_portada.jpg",
+    "canciones side 1": [
+      "Demoliendo Hoteles", "Promesas Sobre El Bidet", "Raros Peinados Nuevos", "Piano Bar", "No Te Animás A Despegar"
+    ],
+    "canciones side 2": [
+      "No Se Va A Llamar Mi Amor", "Tuve Tu Amor", "Rap Del Exilio", "Cerca De La Revolución", "Total Interferencia"
+    ]
+  },
+  {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
     "año": 2010,
