@@ -497,6 +497,91 @@
     ]
   },
   {
+    "titulo": "Diamonds",
+    "artista": "Elton John",
+    "año": 2017,
+    "decada": "2010s",
+    "genero": ["Rock", "Blues", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/diamonds_portada.jpg",
+    "canciones side A": [
+      "Your Song", "Tiny Dancer", "Rocket Man (I Think It's Going To Be A Long, Long Time)", 
+      "Crocodile Rock", "Daniel"
+    ],
+    "canciones side B": [
+      "Saturday Night's Alright (For Fighting)", "Goodbye Yellow Brick Road", 
+      "Candle In The Wind", 
+      "Bennie And The Jets", "Someone Saved My Life Tonight"
+    ],
+    "canciones side C": [
+      "Don't Go Breaking My Heart", "Sorry Seems To Be The Hardest Word", 
+      "Song For Guy", "Blue Eyes", "I'm Still Standing", "I Guess That's Why They Call It The Blues"
+    ],
+    "canciones side D": [
+      "Nikita", "Sacrifice", "Don't Let The Sun Go Down On Me",
+      "Can You Feel The Love Tonight", "Are You Ready For Love?"
+    ]
+  },
+  {
+    "titulo": "ELV1S 30 #1 Hits",
+    "artista": "Elvis Presley",
+    "año": 2002,
+    "decada": "2000s",
+    "genero": ["Rock and Roll"],
+    "tamano": "12 pulgadas",
+    "portada": "images/elvis_portada.jpg",
+    "canciones side A": [
+      "Heartbreak Hotel", "Don't Be Cruel", "Hound Dog", "Love Me Tender", "Too Much", "All Shook Up",
+      "(Let Me Be Your) Teddy Bear", "Jailhouse Rock"
+    ],
+    "canciones side B": [
+      "Don't", "Hard Headed Woman", "One Night", "(Now And Then There's) A Fool Such As I", 
+      "A Big Hunk O'Love", "Stuck On You", "It's Now Or Never"
+    ],
+    "canciones side C": [
+      "Are You Lonesome Tonight?", "Wooden Heart", "Surrender", "(Marie's The Name) His Latest Flame", 
+      "Can't Help Falling In Love", "Good Luck Charm", "She's Not You", "Return To Sender", "(You're The) Devil In Disguise"
+    ],
+    "canciones side D": [
+      "Crying In The Chapel", "In The Ghetto", "Suspicious Minds", "The Wonder Of You", "Burning Love", "Way Down"
+    ],
+    "Bonus Track": "A Little Less Conversation (JXL Radio Edit Remix)"
+  },
+  {
+    "titulo": "Emmanuel",
+    "artista": "Emmanuel",
+    "año": 1984,
+    "decada": "1980s",
+    "genero": ["Latin"],
+    "tamano": "12 pulgadas",
+    "portada": "images/emmanuel_portada.jpg",
+    "canciones side A": [
+      "Hay Que Arrimar El Alma", "Nuestro Amor", "Detenedla Ta", 
+      "Aqui No Hay Sitio Para Ti", "Porque Ella No Sabe Vivir Sin Mi"
+    ],
+    "canciones side B": [
+      "Pobre Diablo", "Seguia Lloviendo Afuera", "Cuando No Es Contigo",
+      "Vamos A Amarnos Despacio", "Venga"
+    ]
+  },
+  {
+    "titulo": "Edición Limitada Con 15 Éxitos",
+    "artista": "Emmanuel",
+    "año": 1984,
+    "decada": "1980s",
+    "genero": ["Latin", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/emmanuel15_portada.jpg",
+    "canciones side 1": [
+      "Tengo", "Insoportablemente Bella", "Amor Sin Final", 
+      "Enredadito A Tu Cintura", "Él Y Yo", "SI Ese Tiempo Pudiera Volver", "Todo Se Derrumbó Dentro De Mi"
+    ],
+    "canciones side 2": [
+      "Será", "Al Final", "Un Tal José", "Tú Y Yo", "Amanecí En Tus Brazos",
+      "Sin Caballero No Hay Dama", "Señora Hora Por Hora", "Ven Con El Alma Desnuda"
+    ]
+  },
+  {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
     "año": 2010,
