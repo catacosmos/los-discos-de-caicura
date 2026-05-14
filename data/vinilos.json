@@ -725,12 +725,12 @@
     "canciones side R": [
       "Yesterdays", "Ain't It Fun", "Since I Don't Have You", "Sympathy For The Devil"
     ]
-  },
+  },  
   {
     "titulo": "Amor Amarillo",
     "artista": "Gustavo Cerati",
     "año": 2020,
-    "decada": "1993s",
+    "decada": "1990s",
     "genero": ["Rock", "Pop"],
     "tamano": "12 pulgadas",
     "portada": "images/amoramarillo_portada.jpg",
@@ -748,11 +748,81 @@
     ]
   },
   {
+    "titulo": "The Very Best",
+    "artista": "INXS",
+    "año": 2011,
+    "decada": "2010s",
+    "genero": ["Rock", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/theverybest_portada.jpg",
+    "canciones side A": [
+      "Need You Tonight", "Mystify", "Suicide Blonde", "Taste It", "Original Sin"
+    ],
+    "canciones side B": [
+      "Heaven Sent", "Disappear", "Never Tear Us Apart", "The Gift", "Devil Inside"
+    ],
+    "canciones side C": [
+      "Beautiful Girl", "By My Side", "Kiss The Dirt (Falling Down The Mountain)", "Elegantly Wasted", "New Sensation"
+    ],
+    "canciones side D": [
+      "What You Need", "Listen Like Thieves", "Just Keep Walking", "Bitter Tears", "Baby Don't Cry"
+    ]
+  },
+  {
+    "titulo": "Greatest Hits",
+    "artista": "James Brown",
+    "año": 2018,
+    "decada": "2010s",
+    "genero": ["Funk / Soul"],
+    "tamano": "12 pulgadas",
+    "portada": "images/jamesbrown_portada.jpg",
+    "canciones side A": [
+      "Sex Machine", "I Got The Feelin'", "The Boss", "People Get Up And Drive Funky Soul", 
+      "Papa's Got A Brand New Car", "Forever Suffering"
+    ],
+    "canciones side B": [
+      "I Got You (I Feel Good)", "Try Me", "The Payback", "Cold Sweat", "Maybe I'll Understand", "Out Of Sight"
+    ]
+  },
+  {
+    "titulo": "Janis Joplin's Greatest Hits",
+    "artista": "Janis Joplin",
+    "año": 1973,
+    "decada": "1970s",
+    "genero": ["Rock"],
+    "tamano": "12 pulgadas",
+    "portada": "images/janisjoplin_portada.jpg",
+    "canciones side 1": [
+      "Piece Of My Heart", "Summertime", "Try (Just A Little Bit Harder)", 
+      "Cry Baby", "Me And Bobby McGee"
+    ],
+    "canciones side 2": [
+      "Down On Me", "Get It While You Can", "Bye, Bye Baby", "Move Over", "Ball And Chain"
+    ]
+  },
+  {
+    "titulo": "The Singles Collection 1984/1990",
+    "artista": "Jimmy Somerville (Featuring Bronski Beat And The Communards)",
+    "año": 1990,
+    "decada": "1990s",
+    "genero": ["Electronic", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/jimmy_portada.jpg",
+    "canciones side 1": [
+      "Smalltown Boy", "Don't Leave Me This Way", "Ain't Necessarily So", 
+      "To Love Somebody", "Comment Te Dire Adieu", "Run From Love", "Never Can Say Goodbye"
+    ],
+    "canciones side 2": [
+      "Why?", "You Are My World", "For A Friend", "I Feel Love/Johnny Remember Me", 
+      "There's More To Love Than Boy Meets Girl", "So Cold The Night", "You Make Me Feel (Mighty Real)"
+    ]
+  },
+  {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
     "año": 2010,
     "decada": "2010s",
-    "genero": "Latin Pop Rock",
+    "genero": ["Latin Pop Rock"],
     "tamano": "12 pulgadas",
     "portada": "images/nicole20años_portada.jpg",
     "canciones side A": [
