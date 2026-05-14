@@ -545,7 +545,7 @@
     "canciones side D": [
       "Crying In The Chapel", "In The Ghetto", "Suspicious Minds", "The Wonder Of You", "Burning Love", "Way Down"
     ],
-    "Bonus Track": "A Little Less Conversation (JXL Radio Edit Remix)"
+    "Bonus Track": ["A Little Less Conversation (JXL Radio Edit Remix)"]
   },
   {
     "titulo": "Emmanuel",
@@ -574,11 +574,90 @@
     "portada": "images/emmanuel15_portada.jpg",
     "canciones side 1": [
       "Tengo", "Insoportablemente Bella", "Amor Sin Final", 
-      "Enredadito A Tu Cintura", "Él Y Yo", "SI Ese Tiempo Pudiera Volver", "Todo Se Derrumbó Dentro De Mi"
+      "Enredadito A Tu Cintura", "Él Y Yo", "Si Ese Tiempo Pudiera Volver", "Todo Se Derrumbó Dentro De Mi"
     ],
     "canciones side 2": [
       "Será", "Al Final", "Un Tal José", "Tú Y Yo", "Amanecí En Tus Brazos",
       "Sin Caballero No Hay Dama", "Señora Hora Por Hora", "Ven Con El Alma Desnuda"
+    ]
+  },
+  {
+    "titulo": "The Real Thing",
+    "artista": "Faith No More",
+    "año": 1989,
+    "decada": "1980s",
+    "genero": ["Alternative Metal", "Funk Metal", "Alternative Rock"],
+    "tamano": "12 pulgadas",
+    "portada": "images/realthing_portada.jpg",
+    "canciones side 1": [
+      "From Out Of Nowhere", "Epic", "Falling To Pieces", 
+      "Surprise! You're Dead!", "Zombie Eaters"
+    ],
+    "canciones side 2": [
+      "The Real Thing", "Underwater Love", "The Morning After", "Woodpecker From Mars",
+      "War Pigs", "Edge Of The World"
+    ]
+  },
+  {
+    "titulo": "El Amor Después Del Amor",
+    "artista": "Fito Paez",
+    "año": 2019,
+    "decada": "1990s",
+    "genero": ["Rock", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/elamordespuesdelamor_portada.jpg",
+    "canciones side A": [
+      "El Amor Después Del Amor", "Dos Días En La Vida", "La Verónica", "Tráfico Por Katmandú"
+    ],
+    "canciones side B": [
+      "Pétalo De Sal", "Sacha, Sissí Y El Círculo De Baba", "Un Vestido Y Un Amor", "Tumbas De La Gloria"
+    ],
+    "canciones side C": [
+      "La Rueda Mágica", "Creo", "Detrás Del Muro De Los Lamentos"
+    ],
+    "canciones side D": [
+      "La Balada De Donna Helena", "Brillante Sobre El Mic", "A Rodar Mi Vida"
+    ]
+  },
+  {
+    "titulo": "Rumours",
+    "artista": "Fleetwood Mac",
+    "año": 1977,
+    "decada": "1970s",
+    "genero": ["Rock"],
+    "tamano": "12 pulgadas",
+    "portada": "images/rumours_portada.jpg",
+    "canciones side 1": [
+      "Second Hand News", "Dreams", "Never Going Back Again", 
+      "Don't Stop", "Go Your Own Way", "Songbird"
+    ],
+    "canciones side 2": [
+      "The Chain", "You Make Loving Fun", "I Don't Want To Know", "Oh Daddy", "Gold Dust Woman"
+    ]
+  },
+  {
+    "titulo": "The Most Beautiful Songs Of Frank Sinatra",
+    "artista": "Frank Sinatra",
+    "año": 1972,
+    "decada": "1970s",
+    "genero": ["Jazz", "Pop", "Stage & Screen"],
+    "tamano": "12 pulgadas",
+    "portada": "images/beautifulsongs_portada.jpg",
+    "canciones side A": [
+      "Strangers In The Night", "Stardust", "Swinging On A Star",
+      "Summer Wind", "A Fine Romance", "Baubles, Bangles And Beads"
+    ],
+    "canciones side B": [
+      "Moon River", "Call Me Irresponsible", "Somethin' Stupid",
+      "The Shadow Of Your Smile", "September Song", "That's Life"
+    ],
+    "canciones side C": [
+      "My Way", "Goody Goody", "Moonlight Serenade", 
+      "It Was A Very Good Year", "Days Of Wine And Roses", "Ring-A-Ding Ding"
+    ],
+    "canciones side D": [
+      "The Girl From Ipanema", "More", "Ol' Man River",
+      "Cycles", "Come Fly With Me", "What Now My Love"
     ]
   },
   {
