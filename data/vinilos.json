@@ -661,6 +661,93 @@
     ]
   },
   {
+    "titulo": "Faith",
+    "artista": "George Michael",
+    "año": 1987,
+    "decada": "1980s",
+    "genero": ["Electronic", "Rock", "Funk / Soul", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/faith_portada.jpg",
+    "canciones side 1": [
+      "Faith", "Father Figure", "I Want Your Sex", "One More Try"
+    ],
+    "canciones side 2": [
+      "Hard Day", "Hand To Mouth", "Look At Your Hands", "Monkey", "Kissing A Fool"
+    ]
+  },
+  {
+    "titulo": "Listen Without Prejudice Vol. 1",
+    "artista": "George Michael",
+    "año": 1990,
+    "decada": "1990s",
+    "genero": ["Electronic", "Rock", "Funk / Soul", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/listenwithout_portada.jpg",
+    "canciones side 1": [
+      "Praying For Time", "Freedom 90", "They Won't Go When I Go", "Something To Save", "Cowboys & Angels"
+    ],
+    "canciones side 2": [
+      "Waiting For That Day", "Mothers Pride", "Heal The Pain", "Soul Free", "Waiting (Reprise)"
+    ]
+  },
+  {
+    "titulo": "Black Smoke Rising",
+    "artista": "Greta Van Fleet",
+    "año": 2017,
+    "decada": "2010s",
+    "genero": ["Rock"],
+    "tamano": "12 pulgadas",
+    "portada": "images/blacksmokerising_portada.jpg",
+    "canciones side A": [
+      "Highway Tune", "Safari Song"
+    ],
+    "canciones side B": [
+      "Flower Power", "Black Smoke Rising"
+    ]
+  },
+  {
+    "titulo": "Greatest Hits",
+    "artista": "Guns N' Roses",
+    "año": 2020,
+    "decada": "2020s",
+    "genero": ["Rock"],
+    "tamano": "12 pulgadas",
+    "portada": "images/gunsgreatest_portada.jpg",
+    "canciones side G": [
+      "Welcome To The Jungle", "Sweet Child O' Mine", "Shadow Of Your Love", "Patience"
+    ],
+    "canciones side N": [
+      "Paradise City", "Knockin' On Heaven's Door", "Civil War"
+    ],
+    "canciones side F'N": [
+      "You Could Be Mine", "Don't Cry (Original)", "November Rain", "Live And Let Die"
+    ],
+    "canciones side R": [
+      "Yesterdays", "Ain't It Fun", "Since I Don't Have You", "Sympathy For The Devil"
+    ]
+  },
+  {
+    "titulo": "Amor Amarillo",
+    "artista": "Gustavo Cerati",
+    "año": 2020,
+    "decada": "1993s",
+    "genero": ["Rock", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/amoramarillo_portada.jpg",
+    "canciones side A": [
+      "Amor Amarillo", "Lisa", "Te Llevo Para Que Me Lleves"
+    ],
+    "canciones side B": [
+      "Pulsar", "Cabeza De Medusa", "Av. Alcorta"
+    ],
+    "canciones side C": [
+      "Bajan", "Rombos", "Ahora Es Nunca"
+    ],
+    "canciones side D": [
+      "A Merced", "Torteval"
+    ]
+  },
+  {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
     "año": 2010,
