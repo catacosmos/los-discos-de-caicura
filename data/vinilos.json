@@ -913,7 +913,7 @@
     "decada": "2010s",
     "genero": ["Latin"],
     "tamano": "12 pulgadas",
-    "portada": "images/30anos_portada.jpg",
+    "portada": "images/30años_portada.jpg",
     "canciones side A": [
       "Medley Cumbias", "Medley Merequetengues", "Medley de Boleros 1", "Medley Cumbias 4"
     ],
@@ -928,7 +928,7 @@
     "decada": "2010s",
     "genero": ["Rock"],
     "tamano": "12 pulgadas",
-    "portada": "images/untitled_portada.png",
+    "portada": "images/untitled_portada.jpg",
     "canciones side A": [
       "Black Dog", "Rock And Roll", "The Battle Of Evermore", "Stairway To Heaven"
     ],
@@ -960,7 +960,7 @@
     "decada": "1980s",
     "genero": ["Electronic"],
     "tamano": "12 pulgadas",
-    "portada": "images/lime_portada.png",
+    "portada": "images/lime_portada.jpg",
     "canciones side 1": [
       "Angel Eyes", "Babe, We're Gonna Love Tonight", "Come And Get Your Love"
     ],
@@ -975,7 +975,7 @@
     "decada": "2010s",
     "genero": ["Rock", "Latin"],
     "tamano": "12 pulgadas",
-    "portada": "images/antologia_portada.png",
+    "portada": "images/antologia_portada.jpg",
     "canciones side A": [
       "Las Cosas Que Cambié y Dejé Por Ti", "Canción Para Mañana", "No Me Hables de Sufrir",
       "Cura de Espanto", "Ven Aquí"
@@ -1003,7 +1003,7 @@
       "Eve-Evelyn", "Sexo"
     ],
     "canciones side B": [
-      "¿Quien Mato A Marilyn?", "Paramar", "No Necesitamos Banderas", 
+      "¿Quien Mató A Marilyn?", "Paramar", "No Necesitamos Banderas", 
       "Mentalidad Televisiva", "Nunca Quedas Mal Con Nadie"
     ]
   },
