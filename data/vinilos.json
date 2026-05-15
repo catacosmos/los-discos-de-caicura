@@ -818,6 +818,228 @@
     ]
   },
   {
+    "titulo": "Vivo 1999-2019",
+    "artista": "Joe Vasconcellos",
+    "año": 2019,
+    "decada": "2010s",
+    "genero": ["Latin", "Folk", "World & Country"],
+    "tamano": "12 pulgadas",
+    "portada": "images/joevasconcellos_portada.jpg",
+    "canciones side A": [
+      "Ciudad Traicionera", "Preemergencia", "Huellas", "Una Fiebre"
+    ],
+    "canciones side B": [
+      "Solo Por Esta Noche", "Las Seis", "Induce", "Mágico", "Conciencia"
+    ],
+    "canciones side C": [
+      "Coolpa", "Me Demoro", "La Funa", "Blusa Transparente", "Quieto"
+    ],
+    "canciones side D": [
+      "Sueltalapepa", "De Terror", "Sed De Gol", "Hijo Del Sol Luminoso", "(Bonus Track) La Joya Del Pacífico"
+    ]
+  },
+  {
+    "titulo": "Bachata Rosa",
+    "artista": "Juan Luis Guerra 4.40",
+    "año": 1990,
+    "decada": "1990s",
+    "genero": ["Latin"],
+    "tamano": "12 pulgadas",
+    "portada": "images/bachatarosa_portada.jpg",
+    "canciones side 1": [
+      "Rosalia", "Como Abeja Al Panal", "Carta De Amor", 
+      "Estrellitas Y Duendes", "A Pedir Su Mano"
+    ],
+    "canciones side 2": [
+      "La Bilirrubina", "Burbujas De Amor", "Bachata Rosa",
+      "Reforestame", "Acompañeme Civil"
+    ]
+  },
+  {
+    "titulo": "Kissworld (The Best Of Kiss)",
+    "artista": "Kiss",
+    "año": 2019,
+    "decada": "2010s",
+    "genero": ["Rock"],
+    "tamano": "12 pulgadas",
+    "portada": "images/kissworld_portada.jpg",
+    "canciones side A": [
+      "Crazy Crazy Nights", "Rock And Roll All Nite", "I Was Made For Lovin' You", "God Gave Rock 'N' Roll To You II"
+    ],
+    "canciones side B": [
+      "Detroit Rock City", "Beth", "Lick It Up", "Heaven's On Fire", "Tears Are Falling"
+    ],
+    "canciones side C": [
+      "Unholy", "Hard Luck Woman", "Psycho Circus", "Shout It Out Loud", "Calling Dr. Love", "Christine Sixteen"
+    ],
+    "canciones side D": [
+      "Love Gun", "Shandi", "I´m A Legend Tonight", "Modern Day Delilah", "Hell Or Hallelujah"
+    ]
+  },
+  {
+    "titulo": "Doble Opuesto",
+    "artista": "La Ley",
+    "año": 2015,
+    "decada": "1990s",
+    "genero": ["Electronic", "Rock", "Latin", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/dobleopuesto_portada.jpg",
+    "canciones side 1": [
+      "Doble Opuesto", "Placer", "En Lugares", "Desiertos", "Que Va A Suceder"
+    ],
+    "canciones side 2": [
+      "Prisioneros De La Piel", "A Veces", "Angie", "Sasha", "Solo Ideales"
+    ]
+  },
+  {
+    "titulo": "La Ley",
+    "artista": "La Ley",
+    "año": 2015,
+    "decada": "2010s",
+    "genero": ["Electronic", "Rock", "Latin", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/laley_portada.jpg",
+    "canciones side 1": [
+      "Tejedores De Ilusión", "Auto-Ruta (Feel The Skin)", "Si Tú No Estás Aquí", "Decadencia", "Por Un Binocular"
+    ],
+    "canciones side 2": [
+      "Roces", "I.L.U.", "Bon Voyage", "Plegarias", "Proyecto Ser"
+    ]
+  },
+  {
+    "titulo": "30 Años de Exitos",
+    "artista": "La Sonora De Tommy Rey",
+    "año": 2018,
+    "decada": "2010s",
+    "genero": ["Latin"],
+    "tamano": "12 pulgadas",
+    "portada": "images/30anos_portada.jpg",
+    "canciones side A": [
+      "Medley Cumbias", "Medley Merequetengues", "Medley de Boleros 1", "Medley Cumbias 4"
+    ],
+    "canciones side B": [
+      "Medley Cumbias N°4", "Seleccion de Merequetengues", "Seleccion de Boleros 2", "Medley Cumbias N°5"
+    ]
+  },
+  {
+    "titulo": "Untitled",
+    "artista": "Led Zeppelin",
+    "año": 2014,
+    "decada": "2010s",
+    "genero": ["Rock"],
+    "tamano": "12 pulgadas",
+    "portada": "images/untitled_portada.png",
+    "canciones side A": [
+      "Black Dog", "Rock And Roll", "The Battle Of Evermore", "Stairway To Heaven"
+    ],
+    "canciones side B": [
+      "Misty Mountain Hop", "Four Sticks", "Going To California", "When The Levee Breaks"
+    ]
+  },
+  {
+    "titulo": "Fuiste Mia Un Verano",
+    "artista": "Leonardo Favio",
+    "año": 1969,
+    "decada": "1960s",
+    "genero": ["Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/leonardofavio_portada.png",
+    "canciones side 1": [
+      "Asi Es Carolita", "Amanecer Y La Espera", "Ella... Ella Ya Me Olvido (Yo La Recuerdo Ahora)", 
+      "Ni El Clavel, Ni La Rosa", "Fuiste Mia Un Verano"
+    ],
+    "canciones side 2": [
+      "No Ser Dios Y Cuidarlos", "Quiero Aprender De Memoria", "Para Saber Como Es La Soledad", "Anny",
+      "Alguna Vez Una Cancion", "O Quizas Simplemente Le Regale Una Rosa"
+    ]
+  },
+  {
+    "titulo": "The Greatest Hits",
+    "artista": "Lime",
+    "año": 2021,
+    "decada": "1980s",
+    "genero": ["Electronic"],
+    "tamano": "12 pulgadas",
+    "portada": "images/lime_portada.png",
+    "canciones side 1": [
+      "Angel Eyes", "Babe, We're Gonna Love Tonight", "Come And Get Your Love"
+    ],
+    "canciones side 2": [
+      "Unexpected Lovers", "Your Love", "Guilty"
+    ]
+  },
+  {
+    "titulo": "Antologia",
+    "artista": "Los Bunkers",
+    "año": 2019,
+    "decada": "2010s",
+    "genero": ["Rock", "Latin"],
+    "tamano": "12 pulgadas",
+    "portada": "images/antologia_portada.png",
+    "canciones side A": [
+      "Las Cosas Que Cambié y Dejé Por Ti", "Canción Para Mañana", "No Me Hables de Sufrir",
+      "Cura de Espanto", "Ven Aquí"
+    ],
+    "canciones side B": [
+      "Ahora Que No Estás", "Sueño Con Serpientes", "Miéntele", "Llueve Sobre La Ciudad", "Miño"
+    ],
+    "canciones side C": [
+      "Ángel Para Un Final", "Nada Nuevo Bajo El Sol", "La Exiliada Del Sur", "Y Volveré", "Si Estás Pensando Mal De Mi"
+    ],
+    "canciones side D": [
+      "Bailando Solo", "Llueve Sobre La Ciudad (AlduMix)", "Pobre Corazón", "Dime Quien", "Get It On"
+    ]
+  },
+  {
+    "titulo": "La Voz De Los '80",
+    "artista": "Los Prisioneros",
+    "año": 2014,
+    "decada": "1980s",
+    "genero": ["Rock", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/vozdelos80_portada.jpg",
+    "canciones side A": [
+      "La Voz De Los '80", "Brigada De Negro", "Latinoamérica Es Un Pueblo Al Sur De Estados Unidos", 
+      "Eve-Evelyn", "Sexo"
+    ],
+    "canciones side B": [
+      "¿Quien Mato A Marilyn?", "Paramar", "No Necesitamos Banderas", 
+      "Mentalidad Televisiva", "Nunca Quedas Mal Con Nadie"
+    ]
+  },
+  {
+    "titulo": "Grandes Éxitos",
+    "artista": "Lucybell",
+    "año": 2022,
+    "decada": "2020s",
+    "genero": ["Rock", "Pop"],
+    "tamano": "12 pulgadas",
+    "portada": "images/lucybell_portada.jpg",
+    "canciones side 1": [
+      "De Sudor Y Ternura", "Mataz", "Lunas", "Vete", "Flotar Es Caer"
+    ],
+    "canciones side 2": [
+      "Que No Me Vengan Con Paraísos", "Viajar", "Caballos De Histeria", 
+      "Carnaval", "Sembrando En El Mar", "Cuando Respiro En Tu Boca"
+    ]
+  },
+  {
+    "titulo": "La Piragua De Luisin",
+    "artista": "Luisin Landaez",
+    "año": 1970,
+    "decada": "1970s",
+    "genero": ["Latin"],
+    "tamano": "12 pulgadas",
+    "portada": "images/luisinlandaez_portada.jpg",
+    "canciones side 1": [
+      "Palmaditas", "El Modulo", "Tu No Me Quieres", "La Piragua", "Lucerito", "Cumbia De Melao"
+    ],
+    "canciones side 2": [
+      "La Banda Dominguera", "Mariluna", "El Venezolano", 
+      "Se Me Crispa La Piel", "Macondo", "Cuando Respiro En Tu Boca"
+    ]
+  },
+  {
     "titulo": "Nicole 20 años",
     "artista": "Nicole",
     "año": 2010,
