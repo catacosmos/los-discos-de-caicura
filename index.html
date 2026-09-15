@@ -16,14 +16,13 @@
   <p>Colección personal de Jaime González Cáceres</p>
 </header>
 
-  <!-- Nueva organización de los filtros -->
-  <section class="filters-container">
-    <div class="search-row">
-      <input type="text" id="search-input" placeholder="Buscar disco o artista...">
-      <button id="btn-limpiar" title="Limpiar todos los filtros">✖ Limpiar</button>
-    </div>
-    
-    <div class="selects-row">
+  <section class="search-section">
+    <input type="text" id="search-input" placeholder="Buscar disco o artista...">
+    <button id="btn-toggle-filtros">Filtrar y Ordenar ▼</button>
+  </section>
+
+  <section id="filtros-panel" class="filtros-panel oculto">
+    <div class="filtros-grid">
       <div>
         <label>Artista:</label>
         <select id="filter-artista"></select>
@@ -42,10 +41,13 @@
           <option value="default">Por defecto (A-Z)</option>
           <option value="artista-za">Artista (Z a la A)</option>
           <option value="titulo-az">Título (A a la Z)</option>
-          <option value="anio-asc">Año (Más antiguo primero)</option>
-          <option value="anio-desc">Año (Más nuevo primero)</option>
+          <option value="anio-asc">Año (Antiguo a Nuevo)</option>
+          <option value="anio-desc">Año (Nuevo a Antiguo)</option>
         </select>
       </div>
+    </div>
+    <div class="limpiar-container">
+       <button id="btn-limpiar" title="Limpiar todos los filtros">✖ Limpiar Filtros</button>
     </div>
   </section>
 
@@ -69,7 +71,6 @@
     <p>&copy; 2026</p>
   </footer>
 
-  <!-- Botón Volver arriba -->
   <button id="btn-subir" title="Volver arriba">↑</button>
 
   <script src="script.js"></script>
