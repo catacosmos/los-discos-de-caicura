@@ -3,8 +3,7 @@
 /* 1. Base y Fondo */
 body {
   font-family: 'Georgia', serif;
-  background: #121212; /* Fondo casi negro */
-  /* Textura sutil de cuero/vinilo */
+  background: #121212; 
   background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://www.transparenttextures.com/patterns/leather.png');
   color: #e0e0e0;
   margin: 0;
@@ -14,10 +13,10 @@ body {
 /* 2. Encabezado y Logo */
 header {
   background: linear-gradient(to bottom, #1a1a1a, #000000);
-  color: #f1c40f; /* Dorado rockero */
+  color: #f1c40f; 
   text-align: center;
   padding: 40px 20px;
-  border-bottom: 5px solid #960000; /* Rojo oscuro metálico */
+  border-bottom: 5px solid #960000; 
   box-shadow: 0 4px 20px rgba(0,0,0,0.8);
 }
 
@@ -50,7 +49,7 @@ header p {
   margin-top: 10px;
 }
 
-/* 3. Filtros */
+/* 3. Filtros y Búsqueda */
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -83,11 +82,40 @@ select {
   border: 1px solid #960000;
   cursor: pointer;
   outline: none;
+  font-family: 'Georgia', serif; 
 }
 
 select:focus {
   border-color: #f1c40f;
   box-shadow: 0 0 5px rgba(241, 196, 15, 0.3);
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1; 
+  max-width: 300px;
+}
+
+#search-input {
+  padding: 10px 15px;
+  border-radius: 4px;
+  background: #252525;
+  color: #fff;
+  border: 1px solid #960000;
+  outline: none;
+  font-family: 'Georgia', serif; 
+}
+
+#search-input:focus {
+  border-color: #f1c40f;
+  box-shadow: 0 0 5px rgba(241, 196, 15, 0.3); 
+}
+
+#search-input::placeholder {
+  color: #666;
+  font-style: italic;
 }
 
 /* 4. Contenedor y Cartas de Vinilo */
@@ -216,42 +244,19 @@ hr {
 
 .modal-grid li { margin-bottom: 8px; font-size: 0.95rem; }
 
-/* 6. Responsividad */
-@media (max-width: 768px) {
-  .modal-grid { grid-template-columns: 1fr; }
-  h1 { font-size: 2rem; }
-  .modal-content { margin: 10% auto; padding: 20px; }
+/* 6. Contador de Vinilos, Resultados Vacíos y Footer */
+.contador-container {
+  text-align: center;
+  margin: 15px 0 0 0; 
 }
 
-.search-container {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  flex-grow: 1; /* Para que ocupe un poco más de espacio */
-  max-width: 300px;
-}
-
-#search-input {
-  padding: 10px 15px;
-  border-radius: 4px;
-  background: #252525;
-  color: #fff;
-  border: 1px solid #960000;
-  outline: none;
-}
-
-#search-input:focus {
-  border-color: #f1c40f;
-}
-
-#search-input::placeholder {
-  color: #666;
+#contador-vinilos {
+  color: #999;
+  font-size: 0.9rem;
   font-style: italic;
+  margin: 0;
 }
 
-/* 📱 AJUSTES RESPONSIVOS Y MENSAJE DE ERROR */
-
-/* Estilo para el mensaje de "No resultados" */
 .no-results {
   text-align: center;
   padding: 50px;
@@ -270,14 +275,40 @@ hr {
   font-style: italic;
 }
 
-/* Media Query para pantallas pequeñas (Celulares) */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  background: linear-gradient(to top, #1a1a1a, rgba(0,0,0,0)); 
+  border-top: 1px solid #333;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer strong {
+  color: #960000; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 7. Responsividad (Celulares) */
+@media (max-width: 768px) {
+  .modal-grid { grid-template-columns: 1fr; }
+  h1 { font-size: 2rem; }
+  .modal-content { margin: 10% auto; padding: 20px; }
+}
+
 @media (max-width: 600px) {
   header {
     padding: 20px 10px;
   }
 
   h1 {
-    font-size: 1.8rem; /* Título más pequeño en celular */
+    font-size: 1.8rem; 
   }
 
   .main-logo {
@@ -285,14 +316,14 @@ hr {
   }
 
   .filters {
-    flex-direction: column; /* Filtros uno debajo del otro */
+    flex-direction: column; 
     align-items: stretch;
     padding: 15px;
     gap: 15px;
   }
 
   .search-container {
-    max-width: 100%; /* El buscador ocupa todo el ancho */
+    max-width: 100%; 
   }
 
   #vinilos-container {
@@ -301,7 +332,7 @@ hr {
   }
 
   .vinilo-card {
-    width: 100%; /* Las cartas ocupan casi todo el ancho */
+    width: 100%; 
     max-width: 280px;
   }
 }
