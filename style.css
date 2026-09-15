@@ -172,7 +172,7 @@ select:focus {
   color: #bbb;
 }
 
-/* 5. Modal de Detalles (Modificado para animación) */
+/* 5. Modal de Detalles (Con animaciones) */
 .modal {
   visibility: hidden; 
   opacity: 0;
@@ -257,7 +257,7 @@ hr {
 
 .modal-grid li { margin-bottom: 8px; font-size: 0.95rem; }
 
-/* 6. Contador de Vinilos, Resultados Vacíos y Footer */
+/* 6. Contador, Resultados Vacíos y Nuevo Footer Minimalista */
 .contador-container {
   text-align: center;
   margin: 15px 0 0 0; 
@@ -290,21 +290,23 @@ hr {
 
 footer {
   text-align: center;
-  padding: 30px 20px;
-  margin-top: 40px;
-  background: linear-gradient(to top, #1a1a1a, rgba(0,0,0,0)); 
-  border-top: 1px solid #333;
-  font-size: 0.85rem;
-  color: #777;
+  padding: 40px 20px 20px;
+  margin-top: 50px;
+  border-top: 1px solid #222;
+  font-size: 0.8rem;
+  color: #555;
+  background: transparent;
 }
 
 footer p {
-  margin: 5px 0;
+  margin: 4px 0;
+  letter-spacing: 0.5px;
 }
 
 footer strong {
-  color: #960000; 
-  text-transform: uppercase;
+  color: #888;
+  text-transform: none;
+  font-weight: normal;
   letter-spacing: 1px;
 }
 
