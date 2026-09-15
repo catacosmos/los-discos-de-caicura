@@ -20,21 +20,14 @@ header {
   box-shadow: 0 4px 20px rgba(0,0,0,0.8);
 }
 
-.logo-container {
-  margin-bottom: 15px;
-}
-
+.logo-container { margin-bottom: 15px; }
 .main-logo {
   max-width: 140px;
   height: auto;
   filter: drop-shadow(0 0 8px rgba(241, 196, 15, 0.4));
   transition: transform 0.3s ease;
 }
-
-.main-logo:hover {
-  transform: rotate(-5deg) scale(1.1);
-}
-
+.main-logo:hover { transform: rotate(-5deg) scale(1.1); }
 h1 {
   font-size: 3rem;
   margin: 0;
@@ -42,38 +35,26 @@ h1 {
   letter-spacing: 2px;
   text-shadow: 3px 3px 0px #4e0000;
 }
+header p { font-style: italic; color: #999; margin-top: 10px; }
 
-header p {
-  font-style: italic;
-  color: #999;
-  margin-top: 10px;
-}
-
-/* 3. Filtros y Búsqueda (REDISEÑADO) */
-.filters-container {
-  background: rgba(30, 30, 30, 0.5);
-  border-bottom: 1px solid #333;
+/* 3. Búsqueda y Panel de Filtros (ESTILO TIENDA) */
+.search-section {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
   padding: 25px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.search-row {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-  max-width: 600px;
+  background: rgba(20, 20, 20, 0.8);
+  border-bottom: 1px solid #333;
 }
 
 #search-input {
   flex-grow: 1;
-  padding: 12px 15px;
-  border-radius: 4px;
+  max-width: 400px;
+  padding: 12px 20px;
+  border-radius: 25px; /* Bordes redondeados modernos */
   background: #252525;
   color: #fff;
-  border: 1px solid #960000;
+  border: 1px solid #555;
   outline: none;
   font-family: 'Georgia', serif; 
   font-size: 1rem;
@@ -81,68 +62,97 @@ header p {
 
 #search-input:focus {
   border-color: #f1c40f;
-  box-shadow: 0 0 5px rgba(241, 196, 15, 0.3); 
+  box-shadow: 0 0 8px rgba(241, 196, 15, 0.4); 
 }
 
-#search-input::placeholder {
-  color: #666;
-  font-style: italic;
-}
-
-#btn-limpiar {
-  background-color: transparent;
-  color: #960000;
-  border: 1px solid #960000;
-  padding: 0 15px;
-  border-radius: 4px;
+#btn-toggle-filtros {
+  background-color: #252525;
+  color: #f1c40f;
+  border: 1px solid #555;
+  padding: 10px 20px;
+  border-radius: 25px;
   cursor: pointer;
-  font-weight: bold;
   font-family: 'Georgia', serif;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 
-#btn-limpiar:hover {
-  background-color: #960000;
-  color: #fff;
+#btn-toggle-filtros:hover, #btn-toggle-filtros.activo {
+  background-color: #333;
+  border-color: #f1c40f;
 }
 
-.selects-row {
-  display: flex;
-  flex-wrap: wrap;
+/* El panel que se despliega */
+.filtros-panel {
+  background: #1a1a1a;
+  padding: 20px;
+  border-bottom: 2px solid #960000;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.filtros-panel.oculto {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.filtros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  justify-content: center;
-  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.selects-row div {
+.filtros-grid div {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-label {
-  color: #f1c40f;
-  font-weight: bold;
+.filtros-grid label {
+  color: #bbb;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  font-size: 0.75rem;
   letter-spacing: 1px;
 }
 
-select {
-  padding: 10px 15px;
+.filtros-grid select {
+  padding: 10px;
   border-radius: 4px;
   background: #252525;
   color: #fff;
-  border: 1px solid #960000;
-  cursor: pointer;
+  border: 1px solid #444;
   outline: none;
   font-family: 'Georgia', serif; 
-  min-width: 160px;
+  cursor: pointer;
 }
 
-select:focus {
+.filtros-grid select:focus {
   border-color: #f1c40f;
-  box-shadow: 0 0 5px rgba(241, 196, 15, 0.3);
+}
+
+.limpiar-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#btn-limpiar {
+  background: transparent;
+  color: #960000;
+  border: 1px solid #960000;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  transition: all 0.3s;
+}
+
+#btn-limpiar:hover {
+  background: #960000;
+  color: #fff;
 }
 
 /* 4. Contenedor y Cartas de Vinilo */
@@ -151,7 +161,7 @@ select:focus {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 
 .vinilo-card {
@@ -183,21 +193,9 @@ select:focus {
   box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
-.vinilo-card:hover img {
-  filter: grayscale(0%);
-}
-
-.vinilo-card h3 {
-  margin: 10px 0 5px;
-  color: #f1c40f;
-  font-size: 1.2rem;
-}
-
-.vinilo-card p {
-  margin: 5px 0;
-  font-size: 0.9rem;
-  color: #bbb;
-}
+.vinilo-card:hover img { filter: grayscale(0%); }
+.vinilo-card h3 { margin: 10px 0 5px; color: #f1c40f; font-size: 1.2rem; }
+.vinilo-card p { margin: 5px 0; font-size: 0.9rem; color: #bbb; }
 
 /* 5. Modal de Detalles */
 .modal {
@@ -212,10 +210,7 @@ select:focus {
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.modal.show {
-  visibility: visible;
-  opacity: 1;
-}
+.modal.show { visibility: visible; opacity: 1; }
 
 .modal-content {
   background: #1a1a1a;
@@ -231,89 +226,23 @@ select:focus {
   transition: transform 0.3s ease;
 }
 
-.modal.show .modal-content {
-  transform: translateY(0);
-}
-
-.close-btn {
-  position: absolute;
-  right: 25px; top: 15px;
-  font-size: 35px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #f1c40f;
-  transition: color 0.2s;
-}
-
+.modal.show .modal-content { transform: translateY(0); }
+.close-btn { position: absolute; right: 25px; top: 15px; font-size: 35px; font-weight: bold; cursor: pointer; color: #f1c40f; transition: color 0.2s; }
 .close-btn:hover { color: #fff; }
-
-.modal-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: start;
-}
-
-.modal-grid img {
-  width: 100%;
-  border-radius: 8px;
-  border: 2px solid #333;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-}
-
-.modal-grid h2 {
-  color: #f1c40f;
-  margin-top: 0;
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid #333;
-  margin: 20px 0;
-}
-
+.modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+.modal-grid img { width: 100%; border-radius: 8px; border: 2px solid #333; box-shadow: 0 10px 25px rgba(0,0,0,0.6); }
+.modal-grid h2 { color: #f1c40f; margin-top: 0; font-size: 2rem; text-transform: uppercase; }
+hr { border: 0; border-top: 1px solid #333; margin: 20px 0; }
 .modal-grid h3 { color: #960000; text-transform: uppercase; font-size: 1rem; }
-
-.modal-grid ul {
-  padding-left: 20px;
-  list-style-type: decimal-leading-zero;
-  color: #ccc;
-}
-
+.modal-grid ul { padding-left: 20px; list-style-type: decimal-leading-zero; color: #ccc; }
 .modal-grid li { margin-bottom: 8px; font-size: 0.95rem; }
 
 /* 6. Contador, Resultados Vacíos y Footer */
-.contador-container {
-  text-align: center;
-  margin: 15px 0 0 0; 
-}
-
-#contador-vinilos {
-  color: #999;
-  font-size: 0.9rem;
-  font-style: italic;
-  margin: 0;
-}
-
-.no-results {
-  text-align: center;
-  padding: 50px;
-  color: #f1c40f;
-  width: 100%;
-}
-
-.no-results p {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.no-results span {
-  color: #666;
-  font-style: italic;
-}
+.contador-container { text-align: center; margin: 15px 0 0 0; }
+#contador-vinilos { color: #999; font-size: 0.9rem; font-style: italic; margin: 0; }
+.no-results { text-align: center; padding: 50px; color: #f1c40f; width: 100%; }
+.no-results p { font-size: 1.5rem; font-weight: bold; margin-bottom: 10px; }
+.no-results span { color: #666; font-style: italic; }
 
 footer {
   text-align: center;
@@ -324,18 +253,8 @@ footer {
   color: #555;
   background: transparent;
 }
-
-footer p {
-  margin: 4px 0;
-  letter-spacing: 0.5px;
-}
-
-footer strong {
-  color: #888;
-  text-transform: none;
-  font-weight: normal;
-  letter-spacing: 1px;
-}
+footer p { margin: 4px 0; letter-spacing: 0.5px; }
+footer strong { color: #888; text-transform: none; font-weight: normal; letter-spacing: 1px; }
 
 /* 7. Botón Volver Arriba Flotante */
 #btn-subir {
@@ -358,19 +277,10 @@ footer strong {
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
 }
+#btn-subir.show { opacity: 1; visibility: visible; }
+#btn-subir:hover { background-color: #f1c40f; color: #000; transform: scale(1.1); }
 
-#btn-subir.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-#btn-subir:hover {
-  background-color: #f1c40f;
-  color: #000;
-  transform: scale(1.1);
-}
-
-/* 8. Responsividad (Celulares) */
+/* 8. Responsividad */
 @media (max-width: 768px) {
   .modal-grid { grid-template-columns: 1fr; }
   h1 { font-size: 2rem; }
@@ -378,30 +288,14 @@ footer strong {
 }
 
 @media (max-width: 600px) {
-  header {
-    padding: 20px 10px;
-  }
-  h1 {
-    font-size: 1.8rem; 
-  }
-  .main-logo {
-    max-width: 100px;
-  }
-  .search-row {
+  .search-section {
     flex-direction: column;
-  }
-  #btn-limpiar {
-    padding: 12px;
-  }
-  .selects-row div, .selects-row select {
-    width: 100%;
-  }
-  #vinilos-container {
-    gap: 15px;
     padding: 15px;
   }
-  .vinilo-card {
-    width: 100%; 
-    max-width: 280px;
+  #search-input {
+    max-width: 100%;
+  }
+  .filtros-grid {
+    grid-template-columns: 1fr; /* Una sola columna en celular */
   }
 }
