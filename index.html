@@ -16,28 +16,36 @@
   <p>Colección personal de Jaime González Cáceres</p>
 </header>
 
-  <section class="filters">
-    <div class="search-container">
-      <label>Buscar Disco o Artista:</label>
-      <input type="text" id="search-input" placeholder="Ej: Abbey Road...">
+  <!-- Nueva organización de los filtros -->
+  <section class="filters-container">
+    <div class="search-row">
+      <input type="text" id="search-input" placeholder="Buscar disco o artista...">
+      <button id="btn-limpiar" title="Limpiar todos los filtros">✖ Limpiar</button>
     </div>
-    <div>
-      <label>Artista:</label>
-      <select id="filter-artista"></select>
-    </div>
-    <div>
-      <label>Década:</label>
-      <select id="filter-decada"></select>
-    </div>
-    <div>
-      <label>Ordenar por:</label>
-      <select id="sort-select">
-        <option value="default">Por defecto (A-Z)</option>
-        <option value="artista-za">Artista (Z a la A)</option>
-        <option value="titulo-az">Título (A a la Z)</option>
-        <option value="anio-asc">Año (Más antiguo primero)</option>
-        <option value="anio-desc">Año (Más nuevo primero)</option>
-      </select>
+    
+    <div class="selects-row">
+      <div>
+        <label>Artista:</label>
+        <select id="filter-artista"></select>
+      </div>
+      <div>
+        <label>Década:</label>
+        <select id="filter-decada"></select>
+      </div>
+      <div>
+        <label>Género:</label>
+        <select id="filter-genero"></select>
+      </div>
+      <div>
+        <label>Ordenar por:</label>
+        <select id="sort-select">
+          <option value="default">Por defecto (A-Z)</option>
+          <option value="artista-za">Artista (Z a la A)</option>
+          <option value="titulo-az">Título (A a la Z)</option>
+          <option value="anio-asc">Año (Más antiguo primero)</option>
+          <option value="anio-desc">Año (Más nuevo primero)</option>
+        </select>
+      </div>
     </div>
   </section>
 
@@ -60,6 +68,9 @@
     <p>Catálogo de la colección personal de Jaime González Cáceres.</p>
     <p>&copy; 2026</p>
   </footer>
+
+  <!-- Botón Volver arriba -->
+  <button id="btn-subir" title="Volver arriba">↑</button>
 
   <script src="script.js"></script>
 
