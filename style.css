@@ -49,18 +49,72 @@ header p {
   margin-top: 10px;
 }
 
-/* 3. Filtros y Búsqueda */
-.filters {
+/* 3. Filtros y Búsqueda (REDISEÑADO) */
+.filters-container {
+  background: rgba(30, 30, 30, 0.5);
+  border-bottom: 1px solid #333;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+#search-input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border-radius: 4px;
+  background: #252525;
+  color: #fff;
+  border: 1px solid #960000;
+  outline: none;
+  font-family: 'Georgia', serif; 
+  font-size: 1rem;
+}
+
+#search-input:focus {
+  border-color: #f1c40f;
+  box-shadow: 0 0 5px rgba(241, 196, 15, 0.3); 
+}
+
+#search-input::placeholder {
+  color: #666;
+  font-style: italic;
+}
+
+#btn-limpiar {
+  background-color: transparent;
+  color: #960000;
+  border: 1px solid #960000;
+  padding: 0 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  transition: all 0.3s ease;
+}
+
+#btn-limpiar:hover {
+  background-color: #960000;
+  color: #fff;
+}
+
+.selects-row {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 25px;
   justify-content: center;
-  background: rgba(30, 30, 30, 0.5);
-  border-bottom: 1px solid #333;
+  width: 100%;
 }
 
-.filters div {
+.selects-row div {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -83,39 +137,12 @@ select {
   cursor: pointer;
   outline: none;
   font-family: 'Georgia', serif; 
+  min-width: 160px;
 }
 
 select:focus {
   border-color: #f1c40f;
   box-shadow: 0 0 5px rgba(241, 196, 15, 0.3);
-}
-
-.search-container {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  flex-grow: 1; 
-  max-width: 300px;
-}
-
-#search-input {
-  padding: 10px 15px;
-  border-radius: 4px;
-  background: #252525;
-  color: #fff;
-  border: 1px solid #960000;
-  outline: none;
-  font-family: 'Georgia', serif; 
-}
-
-#search-input:focus {
-  border-color: #f1c40f;
-  box-shadow: 0 0 5px rgba(241, 196, 15, 0.3); 
-}
-
-#search-input::placeholder {
-  color: #666;
-  font-style: italic;
 }
 
 /* 4. Contenedor y Cartas de Vinilo */
@@ -172,7 +199,7 @@ select:focus {
   color: #bbb;
 }
 
-/* 5. Modal de Detalles (Con animaciones) */
+/* 5. Modal de Detalles */
 .modal {
   visibility: hidden; 
   opacity: 0;
@@ -257,7 +284,7 @@ hr {
 
 .modal-grid li { margin-bottom: 8px; font-size: 0.95rem; }
 
-/* 6. Contador, Resultados Vacíos y Nuevo Footer Minimalista */
+/* 6. Contador, Resultados Vacíos y Footer */
 .contador-container {
   text-align: center;
   margin: 15px 0 0 0; 
@@ -310,7 +337,40 @@ footer strong {
   letter-spacing: 1px;
 }
 
-/* 7. Responsividad (Celulares) */
+/* 7. Botón Volver Arriba Flotante */
+#btn-subir {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: #960000;
+  color: white;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+#btn-subir.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#btn-subir:hover {
+  background-color: #f1c40f;
+  color: #000;
+  transform: scale(1.1);
+}
+
+/* 8. Responsividad (Celulares) */
 @media (max-width: 768px) {
   .modal-grid { grid-template-columns: 1fr; }
   h1 { font-size: 2rem; }
@@ -321,31 +381,25 @@ footer strong {
   header {
     padding: 20px 10px;
   }
-
   h1 {
     font-size: 1.8rem; 
   }
-
   .main-logo {
     max-width: 100px;
   }
-
-  .filters {
-    flex-direction: column; 
-    align-items: stretch;
-    padding: 15px;
-    gap: 15px;
+  .search-row {
+    flex-direction: column;
   }
-
-  .search-container {
-    max-width: 100%; 
+  #btn-limpiar {
+    padding: 12px;
   }
-
+  .selects-row div, .selects-row select {
+    width: 100%;
+  }
   #vinilos-container {
     gap: 15px;
     padding: 15px;
   }
-
   .vinilo-card {
     width: 100%; 
     max-width: 280px;
