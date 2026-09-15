@@ -17,10 +17,9 @@ async function cargarData() {
 
 function mostrarVinilos(lista) {
   const container = document.getElementById("vinilos-container");
-  const contador = document.getElementById("contador-vinilos"); // Capturamos el contador
+  const contador = document.getElementById("contador-vinilos"); 
   container.innerHTML = "";
 
-  // Actualizar el texto del contador
   if (contador) {
     contador.textContent = `Mostrando ${lista.length} disco${lista.length !== 1 ? 's' : ''}`;
   }
@@ -127,7 +126,7 @@ function cargarFiltros() {
   const filterArtista = document.getElementById("filter-artista");
   const filterDecada = document.getElementById("filter-decada");
   const searchInput = document.getElementById("search-input");
-  const sortSelect = document.getElementById("sort-select"); // Nuevo selector
+  const sortSelect = document.getElementById("sort-select"); 
 
   const artistas = [...new Set(vinilos.map(v => v.artista))].sort();
   const decadas = [...new Set(vinilos.map(v => v.decada))].sort();
@@ -142,18 +141,17 @@ function cargarFiltros() {
     filterDecada.innerHTML += `<option value="${d}">${d}</option>`;
   });
 
-  // Escuchar eventos
   filterArtista.addEventListener("change", aplicarFiltros);
   filterDecada.addEventListener("change", aplicarFiltros);
   searchInput.addEventListener("input", aplicarFiltros);
-  sortSelect.addEventListener("change", aplicarFiltros); // Escucha al ordenar
+  sortSelect.addEventListener("change", aplicarFiltros); 
 }
 
 function aplicarFiltros() {
   const artistaSeleccionado = document.getElementById("filter-artista").value;
   const decadaSeleccionada = document.getElementById("filter-decada").value;
   const textoBusqueda = document.getElementById("search-input").value.toLowerCase();
-  const sortOption = document.getElementById("sort-select").value; // Leer opción de orden
+  const sortOption = document.getElementById("sort-select").value; 
 
   let filtrados = vinilos.filter(v => {
     const coincideArtista = artistaSeleccionado === "" || v.artista === artistaSeleccionado;
@@ -164,7 +162,6 @@ function aplicarFiltros() {
     return coincideArtista && coincideDecada && coincideTexto;
   });
 
-  // Lógica de ordenamiento
   filtrados.sort((a, b) => {
     if (sortOption === "artista-az") {
       return a.artista.localeCompare(b.artista);
@@ -173,17 +170,16 @@ function aplicarFiltros() {
     } else if (sortOption === "titulo-az") {
       return a.titulo.localeCompare(b.titulo);
     } else if (sortOption === "anio-asc" || sortOption === "anio-desc") {
-      // Extraemos el año numérico para comparar bien
       const anioA = parseInt(a.año || a["año edición"]) || 0;
       const anioB = parseInt(b.año || b["año edición"]) || 0;
       
       if (sortOption === "anio-asc") {
-        return anioA - anioB; // Menor a mayor
+        return anioA - anioB; 
       } else {
-        return anioB - anioA; // Mayor a menor
+        return anioB - anioA; 
       }
     }
-    return 0; // "default" mantiene el orden original del JSON
+    return 0; 
   });
 
   mostrarVinilos(filtrados);
