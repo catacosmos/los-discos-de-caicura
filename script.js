@@ -27,7 +27,6 @@ async function cargarData() {
       };
     });
 
-    // ORDENAMIENTO INICIAL CORREGIDO (Ignorando caracteres especiales y minúsculas)
     vinilos.sort((a, b) => {
       const artistaA = limpiarTextoParaOrdenar(a.artista);
       const artistaB = limpiarTextoParaOrdenar(b.artista);
@@ -169,7 +168,6 @@ function cargarFiltros() {
   const searchInput = document.getElementById("search-input");
   const sortSelect = document.getElementById("sort-select"); 
 
-  // ORDENAR SELECTOR DE ARTISTAS CON LA MISMA LÓGICA LIMPIA
   const artistas = [...new Set(vinilos.map(v => v.artista))].sort((a, b) => {
     return limpiarTextoParaOrdenar(a).localeCompare(limpiarTextoParaOrdenar(b));
   });
@@ -228,7 +226,6 @@ function aplicarFiltros() {
     return coincideArtista && coincideDecada && coincideGenero && coincideTexto;
   });
 
-  // ORDENAMIENTO EN FILTROS TAMBIÉN CORREGIDO
   filtrados.sort((a, b) => {
     const artistaA = limpiarTextoParaOrdenar(a.artista);
     const artistaB = limpiarTextoParaOrdenar(b.artista);
@@ -250,6 +247,21 @@ function aplicarFiltros() {
 
   mostrarVinilos(filtrados);
 }
+
+// NUEVO: Lógica para mostrar/ocultar el panel de filtros
+const btnToggle = document.getElementById("btn-toggle-filtros");
+const panelFiltros = document.getElementById("filtros-panel");
+
+btnToggle.addEventListener("click", () => {
+  panelFiltros.classList.toggle("oculto");
+  if (panelFiltros.classList.contains("oculto")) {
+    btnToggle.innerHTML = "Filtrar y Ordenar ▼";
+    btnToggle.classList.remove("activo");
+  } else {
+    btnToggle.innerHTML = "Ocultar Filtros ▲";
+    btnToggle.classList.add("activo");
+  }
+});
 
 document.getElementById("btn-limpiar").addEventListener("click", () => {
   document.getElementById("search-input").value = "";
