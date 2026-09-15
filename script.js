@@ -7,6 +7,23 @@ async function cargarData() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     vinilos = await response.json();
+    
+    // PROCESAR DATOS: Calcular décadas y estandarizar años automáticamente
+    vinilos = vinilos.map(v => {
+      const anioOrigen = parseInt(v.año_original || v.año) || 0;
+      const decadaCalculada = anioOrigen > 0 ? `${Math.floor(anioOrigen / 10) * 10}s` : 'Desconocida';
+
+      return {
+        ...v,
+        año_original: anioOrigen,
+        año_edicion: parseInt(v.año_edicion || v["año edición"]) || anioOrigen,
+        decada: decadaCalculada
+      };
+    });
+
+    // ORDENAR AUTOMÁTICAMENTE: Alfabético por Artista apenas carga
+    vinilos.sort((a, b) => a.artista.localeCompare(b.artista));
+
     mostrarVinilos(vinilos);
     cargarFiltros();
   } catch (e) {
@@ -39,7 +56,7 @@ function mostrarVinilos(lista) {
     div.classList.add("vinilo-card");
     div.onclick = () => abrirModal(v);
 
-    const anioMostrar = v.año || v["año edición"] || "N/A";
+    const anioMostrar = v.año_original || "N/A";
 
     div.innerHTML = `
         <img src="${v.portada}" alt="${v.titulo}" onerror="this.onerror=null; this.src='images/default-vinyl.png';">
@@ -55,7 +72,10 @@ function abrirModal(v) {
   const modal = document.getElementById("modal-detalle");
   const content = document.getElementById("modal-body-content");
 
-  const anioMostrar = v.año || v["año edición"] || "N/A";
+  const anioOriginal = v.año_original || "N/A";
+  const anioEdicion = v.año_edicion || "N/A";
+  const decadaMostrar = v.decada;
+  
   const generoMostrar = Array.isArray(v.genero) ? v.genero.join(", ") : (v.genero || 'N/A');
   const tamanoMostrar = Array.isArray(v.tamano) ? v.tamano.join(", ") : (v.tamano || 'N/A');
 
@@ -98,7 +118,8 @@ function abrirModal(v) {
         <div>
           <h2>${v.titulo}</h2>
           <p><strong>Artista:</strong> ${v.artista}</p>
-          <p><strong>Año:</strong> ${anioMostrar} (${v.decada})</p>
+          <p><strong>Lanzamiento original:</strong> ${anioOriginal} (${decadaMostrar})</p>
+          <p><strong>Año de esta edición:</strong> ${anioEdicion}</p>
           <p><strong>Género:</strong> ${generoMostrar}</p>
           <p><strong>Tamaño:</strong> ${tamanoMostrar}</p> 
           <hr>
@@ -110,7 +131,6 @@ function abrirModal(v) {
       </div>
     `;
   
-  // En lugar de display: block, añadimos la clase para la animación
   modal.classList.add("show");
 }
 
@@ -125,7 +145,6 @@ window.onclick = (event) => {
   }
 }
 
-// Cerrar modal con la tecla "Escape"
 document.addEventListener('keydown', function(event) {
   const modal = document.getElementById("modal-detalle");
   if (event.key === "Escape" && modal.classList.contains("show")) {
@@ -140,7 +159,7 @@ function cargarFiltros() {
   const sortSelect = document.getElementById("sort-select"); 
 
   const artistas = [...new Set(vinilos.map(v => v.artista))].sort();
-  const decadas = [...new Set(vinilos.map(v => v.decada))].sort();
+  const decadas = [...new Set(vinilos.map(v => v.decada))].filter(d => d !== 'Desconocida').sort();
 
   filterArtista.innerHTML = '<option value="">Todos los Artistas</option>';
   artistas.forEach(a => {
@@ -174,23 +193,18 @@ function aplicarFiltros() {
   });
 
   filtrados.sort((a, b) => {
-    if (sortOption === "artista-az") {
-      return a.artista.localeCompare(b.artista);
-    } else if (sortOption === "artista-za") {
+    if (sortOption === "artista-za") {
       return b.artista.localeCompare(a.artista);
     } else if (sortOption === "titulo-az") {
       return a.titulo.localeCompare(b.titulo);
-    } else if (sortOption === "anio-asc" || sortOption === "anio-desc") {
-      const anioA = parseInt(a.año || a["año edición"]) || 0;
-      const anioB = parseInt(b.año || b["año edición"]) || 0;
-      
-      if (sortOption === "anio-asc") {
-        return anioA - anioB; 
-      } else {
-        return anioB - anioA; 
-      }
+    } else if (sortOption === "anio-asc") {
+      return (a.año_original || 0) - (b.año_original || 0); 
+    } else if (sortOption === "anio-desc") {
+      return (b.año_original || 0) - (a.año_original || 0); 
+    } else {
+      // Opción 'default' o 'artista-az'
+      return a.artista.localeCompare(b.artista);
     }
-    return 0; 
   });
 
   mostrarVinilos(filtrados);
