@@ -1,5 +1,12 @@
 let vinilos = [];
 
+function limpiarTextoParaOrdenar(texto) {
+  return texto
+    .toLowerCase() 
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "") 
+    .replace(/[^a-z0-9]/g, ""); 
+}
+
 async function cargarData() {
   try {
     const response = await fetch("data/vinilos.json");
@@ -20,7 +27,12 @@ async function cargarData() {
       };
     });
 
-    vinilos.sort((a, b) => a.artista.localeCompare(b.artista));
+    // ORDENAMIENTO INICIAL CORREGIDO (Ignorando caracteres especiales y minúsculas)
+    vinilos.sort((a, b) => {
+      const artistaA = limpiarTextoParaOrdenar(a.artista);
+      const artistaB = limpiarTextoParaOrdenar(b.artista);
+      return artistaA.localeCompare(artistaB);
+    });
 
     mostrarVinilos(vinilos);
     cargarFiltros();
@@ -157,10 +169,13 @@ function cargarFiltros() {
   const searchInput = document.getElementById("search-input");
   const sortSelect = document.getElementById("sort-select"); 
 
-  const artistas = [...new Set(vinilos.map(v => v.artista))].sort();
+  // ORDENAR SELECTOR DE ARTISTAS CON LA MISMA LÓGICA LIMPIA
+  const artistas = [...new Set(vinilos.map(v => v.artista))].sort((a, b) => {
+    return limpiarTextoParaOrdenar(a).localeCompare(limpiarTextoParaOrdenar(b));
+  });
+  
   const decadas = [...new Set(vinilos.map(v => v.decada))].filter(d => d !== 'Desconocida').sort();
   
-  // Extraer géneros (pueden ser strings o arrays)
   let generosRaw = [];
   vinilos.forEach(v => {
     if (Array.isArray(v.genero)) {
@@ -204,7 +219,6 @@ function aplicarFiltros() {
     const coincideArtista = artistaSeleccionado === "" || v.artista === artistaSeleccionado;
     const coincideDecada = decadaSeleccionada === "" || v.decada === decadaSeleccionada;
     
-    // Validar género (si es un array o un string simple)
     const coincideGenero = generoSeleccionado === "" || 
       (Array.isArray(v.genero) ? v.genero.includes(generoSeleccionado) : v.genero === generoSeleccionado);
 
@@ -214,24 +228,29 @@ function aplicarFiltros() {
     return coincideArtista && coincideDecada && coincideGenero && coincideTexto;
   });
 
+  // ORDENAMIENTO EN FILTROS TAMBIÉN CORREGIDO
   filtrados.sort((a, b) => {
+    const artistaA = limpiarTextoParaOrdenar(a.artista);
+    const artistaB = limpiarTextoParaOrdenar(b.artista);
+    const tituloA = limpiarTextoParaOrdenar(a.titulo);
+    const tituloB = limpiarTextoParaOrdenar(b.titulo);
+
     if (sortOption === "artista-za") {
-      return b.artista.localeCompare(a.artista);
+      return artistaB.localeCompare(artistaA);
     } else if (sortOption === "titulo-az") {
-      return a.titulo.localeCompare(b.titulo);
+      return tituloA.localeCompare(tituloB);
     } else if (sortOption === "anio-asc") {
       return (a.año_original || 0) - (b.año_original || 0); 
     } else if (sortOption === "anio-desc") {
       return (b.año_original || 0) - (a.año_original || 0); 
     } else {
-      return a.artista.localeCompare(b.artista);
+      return artistaA.localeCompare(artistaB);
     }
   });
 
   mostrarVinilos(filtrados);
 }
 
-// Botón Limpiar Filtros
 document.getElementById("btn-limpiar").addEventListener("click", () => {
   document.getElementById("search-input").value = "";
   document.getElementById("filter-artista").value = "";
@@ -241,7 +260,6 @@ document.getElementById("btn-limpiar").addEventListener("click", () => {
   aplicarFiltros();
 });
 
-// Lógica del Botón "Volver Arriba"
 const btnSubir = document.getElementById("btn-subir");
 window.addEventListener("scroll", () => {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
