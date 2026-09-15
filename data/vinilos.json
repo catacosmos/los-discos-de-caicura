@@ -24,12 +24,12 @@
     "tamano": "12 pulgadas",
     "portada": "images/backinblack_portada.jpg",
     "canciones side 1": [
-      "Hell's Bells", "Shoot To Thrill", "What Do You Do For Money Honey", "Given The Dog A Bone",
-      "Let Me Put My Love Into You"
+      "Back In Black", "Hell's Bells", "Shoot To Thrill", 
+      "Given The Dog A Bone", "What Do You Do For Money Honey"
     ],
     "canciones side 2": [
-      "Back In Black", "You Shook Me All Night Long", "Have A Drink On Me", "Shake A Leg", 
-      "Rock And Roll Ain't Noise Pollution"
+      "Rock And Roll Ain't Noise Pollution", "Let Me Put My Love Into You",
+       "You Shook Me All Night Long",  "Shake A Leg", "Have A Drink On Me"
     ]
   },
   {
@@ -79,7 +79,7 @@
       "Si O No", "Y Te Amo Igual", "El Gato Y Yo"
     ],
     "canciones lado 2": [
-      "Calla, El Silencio Es Sagrado (Memory)", "Las Pequeñas Cosas", "Mi Buen Corazon", "El Me Mintio", 
+      "Calla, El Silencio Es Sagrado", "Las Pequeñas Cosas", "Mi Buen Corazon", "El Me Mintio", 
       "Dudas", "Desierto", "Siempre Te Amare"
     ]
   },
@@ -104,7 +104,7 @@
     "titulo": "Ring My Bell",
     "artista": "Anita Ward",
     "año_original": 1979,
-    "año_edicion": 1977,
+    "año_edicion": 1979,
     "genero": "Funk/Soul",
     "tamano": ["12 pulgadas", "Maxi-Single"],
     "portada": "images/RingMyBell_portada.jpg",
@@ -127,7 +127,7 @@
       "Black Moon Rising", "Colors", "Know You Better", "Fire", "OCT 33"
     ],
     "canciones side 2": [
-      "Stay Gold", "Old Man", "Confines", "Touch The Sky", "Sweet Conversations"
+      "Stay Gold", "Old Man", "Confines", "Touch the Sky", "Sweet Conversations"
     ]
   },
   {
@@ -139,12 +139,12 @@
     "tamano": "12 pulgadas",
     "portada": "images/bdylanGH_portada.jpg",
     "canciones side 1": [
-      "Rainy Day Women #12 & 35", "Blowin' In The Wind", "The Times They Are A-Changin'",
+      "Rainy Day Women #12 & 35", "Blowin' In the Wind", "The Times They Are A-Changin'",
       "It Ain't Me Babe", "Like A Rolling Stone"
     ],
     "canciones side 2": [
       "Mr. Tambourine Man", "Subterranean Homesick Blues", "I Want You", 
-      "Positively 4th Street", "Just Like A Woman"
+      "Positively 4th Street", "Just Like a Woman"
     ]
   },
   {
@@ -207,7 +207,7 @@
       "Lay Your Hands On Me", "Bad Medicine", "Born To Be My Baby", "Living In Sin", "Blood On Blood"
     ],
     "canciones side 2": [
-      "Wild Is The Wind", "Ride Cowboy Ride", "Stick To Your Guns", "I'll Be There For You",
+      "Homebound Train", "Wild Is The Wind", "Ride Cowboy Ride", "Stick To Your Guns", "I'll Be There For You",
       "99 In The Shade", "Love For Sale"
     ]
   },
@@ -316,7 +316,7 @@
     "tamano": "12 pulgadas",
     "portada": "images/pianobar_portada.jpg",
     "canciones side 1": [
-      "Demoliendo Hoteles", "Promesas Sobre El Bidet", "Raros Peinados Nuevos", "Piano Bar", "No Te Animás A Despegar"
+      "Demoliendo Hoteles", "Promesas Sobre El Bidet", "Raros Peinados Nuevos", "Piano Bar", "No Te Animás A Despegar?"
     ],
     "canciones side 2": [
       "No Se Va A Llamar Mi Amor", "Tuve Tu Amor", "Rap Del Exilio", "Cerca De La Revolución", "Total Interferencia"
@@ -325,7 +325,7 @@
   {
     "titulo": "Cumbia Chilombiana",
     "artista": "Chico Trujillo",
-    "año_original": 2001,
+    "año_original": 2006,
     "año_edicion": 2006,
     "genero": "Latin",
     "tamano": "12 pulgadas",
@@ -340,7 +340,7 @@
   {
     "titulo": "Greatest Hits",
     "artista": "Creedence Clearwater Revival",
-    "año_original": 1973,
+    "año_original": 1978,
     "año_edicion": 2017,
     "genero": "Rock",
     "tamano": "12 pulgadas",
@@ -394,7 +394,7 @@
     "titulo": "ChangesTwoBowie",
     "artista": "David Bowie",
     "año_original": 1981,
-    "año_edicion": 2017,
+    "año_edicion": 2018,
     "genero": ["Electronic", "Rock", "Pop"],
     "tamano": "12 pulgadas",
     "portada": "images/changestwo_portada.jpg",
@@ -402,7 +402,7 @@
       "Aladdin Sane (1913-1938-197?)", "Oh! You Pretty Things", "Starman", "1984", "Ashes To Ashes"
     ],
     "canciones side 2": [
-      "Sound And Vision", "Fashion", "Wild Is The Wind", "John I'm Only Dancing (Again) (1975)", "D.J."
+      "Sound And Vision", "Fashion", "Wild Is The Wind", "John I'm Only Dancing (Again) 1975", "D.J."
     ]
   },
   {
@@ -423,7 +423,7 @@
   {
     "titulo": "The Best Of (Volume 1)",
     "artista": "Depeche Mode",
-    "año_original": 2006,
+    "año_original": 2007,
     "año_edicion": 2017,
     "genero": ["Electronic", "Pop"],
     "tamano": "12 pulgadas",
@@ -451,7 +451,7 @@
     "titulo": "Violator",
     "artista": "Depeche Mode",
     "año_original": 1990,
-    "año_edicion": 1990,
+    "año_edicion": 2007,
     "genero": "Electronic",
     "tamano": "12 pulgadas",
     "portada": "images/violator_poratda.jpg",
@@ -909,7 +909,7 @@
   {
     "titulo": "30 Años de Exitos",
     "artista": "La Sonora De Tommy Rey",
-    "año_original": 2012,
+    "año_original": 2018,
     "año_edicion": 2018,
     "genero": ["Latin"],
     "tamano": "12 pulgadas",
@@ -922,7 +922,7 @@
     ]
   },
   {
-    "titulo": "Untitled",
+    "titulo": "Led Zeppelin IV",
     "artista": "Led Zeppelin",
     "año_original": 1971,
     "año_edicion": 2014,
@@ -1010,7 +1010,7 @@
   {
     "titulo": "Grandes Éxitos",
     "artista": "Lucybell",
-    "año_original": 2000,
+    "año_original": 2022,
     "año_edicion": 2022,
     "genero": ["Rock", "Pop"],
     "tamano": "12 pulgadas",
