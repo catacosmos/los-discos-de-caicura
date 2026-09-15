@@ -8,7 +8,6 @@ async function cargarData() {
     }
     vinilos = await response.json();
     
-    // PROCESAR DATOS: Calcular décadas y estandarizar años automáticamente
     vinilos = vinilos.map(v => {
       const anioOrigen = parseInt(v.año_original || v.año) || 0;
       const decadaCalculada = anioOrigen > 0 ? `${Math.floor(anioOrigen / 10) * 10}s` : 'Desconocida';
@@ -21,7 +20,6 @@ async function cargarData() {
       };
     });
 
-    // ORDENAR AUTOMÁTICAMENTE: Alfabético por Artista apenas carga
     vinilos.sort((a, b) => a.artista.localeCompare(b.artista));
 
     mostrarVinilos(vinilos);
@@ -155,11 +153,23 @@ document.addEventListener('keydown', function(event) {
 function cargarFiltros() {
   const filterArtista = document.getElementById("filter-artista");
   const filterDecada = document.getElementById("filter-decada");
+  const filterGenero = document.getElementById("filter-genero"); 
   const searchInput = document.getElementById("search-input");
   const sortSelect = document.getElementById("sort-select"); 
 
   const artistas = [...new Set(vinilos.map(v => v.artista))].sort();
   const decadas = [...new Set(vinilos.map(v => v.decada))].filter(d => d !== 'Desconocida').sort();
+  
+  // Extraer géneros (pueden ser strings o arrays)
+  let generosRaw = [];
+  vinilos.forEach(v => {
+    if (Array.isArray(v.genero)) {
+      generosRaw.push(...v.genero);
+    } else if (v.genero) {
+      generosRaw.push(v.genero);
+    }
+  });
+  const generos = [...new Set(generosRaw)].sort();
 
   filterArtista.innerHTML = '<option value="">Todos los Artistas</option>';
   artistas.forEach(a => {
@@ -171,8 +181,14 @@ function cargarFiltros() {
     filterDecada.innerHTML += `<option value="${d}">${d}</option>`;
   });
 
+  filterGenero.innerHTML = '<option value="">Todos los Géneros</option>';
+  generos.forEach(g => {
+    filterGenero.innerHTML += `<option value="${g}">${g}</option>`;
+  });
+
   filterArtista.addEventListener("change", aplicarFiltros);
   filterDecada.addEventListener("change", aplicarFiltros);
+  filterGenero.addEventListener("change", aplicarFiltros);
   searchInput.addEventListener("input", aplicarFiltros);
   sortSelect.addEventListener("change", aplicarFiltros); 
 }
@@ -180,16 +196,22 @@ function cargarFiltros() {
 function aplicarFiltros() {
   const artistaSeleccionado = document.getElementById("filter-artista").value;
   const decadaSeleccionada = document.getElementById("filter-decada").value;
+  const generoSeleccionado = document.getElementById("filter-genero").value;
   const textoBusqueda = document.getElementById("search-input").value.toLowerCase();
   const sortOption = document.getElementById("sort-select").value; 
 
   let filtrados = vinilos.filter(v => {
     const coincideArtista = artistaSeleccionado === "" || v.artista === artistaSeleccionado;
     const coincideDecada = decadaSeleccionada === "" || v.decada === decadaSeleccionada;
+    
+    // Validar género (si es un array o un string simple)
+    const coincideGenero = generoSeleccionado === "" || 
+      (Array.isArray(v.genero) ? v.genero.includes(generoSeleccionado) : v.genero === generoSeleccionado);
+
     const coincideTexto = v.titulo.toLowerCase().includes(textoBusqueda) ||
       v.artista.toLowerCase().includes(textoBusqueda);
 
-    return coincideArtista && coincideDecada && coincideTexto;
+    return coincideArtista && coincideDecada && coincideGenero && coincideTexto;
   });
 
   filtrados.sort((a, b) => {
@@ -202,12 +224,34 @@ function aplicarFiltros() {
     } else if (sortOption === "anio-desc") {
       return (b.año_original || 0) - (a.año_original || 0); 
     } else {
-      // Opción 'default' o 'artista-az'
       return a.artista.localeCompare(b.artista);
     }
   });
 
   mostrarVinilos(filtrados);
 }
+
+// Botón Limpiar Filtros
+document.getElementById("btn-limpiar").addEventListener("click", () => {
+  document.getElementById("search-input").value = "";
+  document.getElementById("filter-artista").value = "";
+  document.getElementById("filter-decada").value = "";
+  document.getElementById("filter-genero").value = "";
+  document.getElementById("sort-select").value = "default";
+  aplicarFiltros();
+});
+
+// Lógica del Botón "Volver Arriba"
+const btnSubir = document.getElementById("btn-subir");
+window.addEventListener("scroll", () => {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    btnSubir.classList.add("show");
+  } else {
+    btnSubir.classList.remove("show");
+  }
+});
+btnSubir.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
 cargarData();
