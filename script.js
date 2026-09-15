@@ -42,7 +42,7 @@ function mostrarVinilos(lista) {
     const anioMostrar = v.año || v["año edición"] || "N/A";
 
     div.innerHTML = `
-        <img src="${v.portada}" alt="${v.titulo}">
+        <img src="${v.portada}" alt="${v.titulo}" onerror="this.onerror=null; this.src='images/default-vinyl.png';">
         <h3>${v.titulo}</h3>
         <p><strong>${v.artista}</strong></p>
         <p>${anioMostrar}</p>
@@ -94,7 +94,7 @@ function abrirModal(v) {
 
   content.innerHTML = `
       <div class="modal-grid">
-        <img src="${v.portada}" alt="Portada de ${v.titulo}">
+        <img src="${v.portada}" alt="Portada de ${v.titulo}" onerror="this.onerror=null; this.src='images/default-vinyl.png';">
         <div>
           <h2>${v.titulo}</h2>
           <p><strong>Artista:</strong> ${v.artista}</p>
@@ -110,17 +110,28 @@ function abrirModal(v) {
       </div>
     `;
   
-  modal.style.display = "block";
+  // En lugar de display: block, añadimos la clase para la animación
+  modal.classList.add("show");
 }
 
 document.querySelector(".close-btn").onclick = () => {
-  document.getElementById("modal-detalle").style.display = "none";
+  document.getElementById("modal-detalle").classList.remove("show");
 }
 
 window.onclick = (event) => {
   const modal = document.getElementById("modal-detalle");
-  if (event.target == modal) modal.style.display = "none";
+  if (event.target == modal) {
+    modal.classList.remove("show");
+  }
 }
+
+// Cerrar modal con la tecla "Escape"
+document.addEventListener('keydown', function(event) {
+  const modal = document.getElementById("modal-detalle");
+  if (event.key === "Escape" && modal.classList.contains("show")) {
+    modal.classList.remove("show");
+  }
+});
 
 function cargarFiltros() {
   const filterArtista = document.getElementById("filter-artista");
